@@ -11,6 +11,7 @@
 - Checkpoint 1: approved, committed as `7cf96482235715d81f6b99dea45d21b44cf6fe98`, and preserved on `origin/week14-secure-integration`
 - Checkpoint 2: approved, committed as `5f7bbc030578bd557b94ee342bd65f7a23be54eb`, and pushed to `origin/week14-secure-integration`
 - Checkpoint 3: approved, committed as `d6d65e8`, and pushed to `origin/week14-secure-integration`
+- Final evidence and submission handoff checkpoint: approved, committed as `298f6efedca30653478bea76c12d75ebdff8ccf9`, and pushed to `origin/week14-secure-integration`
 - Approval: student confirmed instructor approval and registration for Project 8 on 2026-11-07; official registry not inspected
 
 ## Checkpoint 1 completed locally
@@ -60,7 +61,7 @@
 - Completed the IA5 build record with code excerpts, protected configuration, verification results, failure recovery, evidence map, and reproduction steps.
 - Prepared reflection prompts for the student's own verified wording and a Week 14 technical-defense question set.
 
-## Final evidence checkpoint ready for review
+## Final evidence checkpoint completed
 
 - Created one combined 39-page Week 14 DOCX with the exact student identification, the full weekly journey, requirement mapping, and thirteen screenshots. Four transient UI states are clearly labeled controlled simulations rather than live backend outcomes.
 - Rendered the complete document through Microsoft Word and visually inspected the content and evidence pages; corrected the alternating-page clipping found during QA.
@@ -70,9 +71,8 @@
 
 ## Pending milestones
 
-1. Student reviews and approves the final evidence/submission-handoff checkpoint before commit and push.
-2. Student personalizes and verifies the reflection worksheet in their own words and rehearses the defense questions.
-3. After the final checkpoint is approved and pushed, propose the exact Week 14 tag, release title, target commit, and release notes for separate approval.
+1. Student personalizes and verifies the reflection worksheet in their own words and rehearses the defense questions.
+2. Propose the exact Week 14 tag, release title, target commit, and release notes for separate approval.
 
 ## Known constraints and honest gaps
 

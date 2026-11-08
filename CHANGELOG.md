@@ -27,7 +27,7 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 
 ### Pending
 
-- Student-verified reflection, final evidence/handoff checkpoint commit, final tag, and release. The combined central evidence DOCX is complete outside Git.
+- Student-verified reflection, final tag, and release. The combined central evidence DOCX is complete outside Git, and the final evidence/handoff checkpoint is pushed.
 
 ## v13.0.0-week13-automation - Week 13 Advanced Automation and Scripting
 

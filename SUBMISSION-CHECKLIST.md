@@ -32,5 +32,5 @@ Status values are `complete`, `pending`, or `blocked`.
 | Checkpoint 1 commit and push | complete | Approved and preserved as `7cf96482235715d81f6b99dea45d21b44cf6fe98` on `week14-secure-integration`. |
 | Checkpoint 2 commit and push | complete | Approved and pushed as `5f7bbc030578bd557b94ee342bd65f7a23be54eb` on `week14-secure-integration`. |
 | Checkpoint 3 documentation commit and push | complete | Approved and pushed as `d6d65e8` on `week14-secure-integration`. |
-| Final evidence and submission handoff checkpoint | pending | Central-DOCX status, evidence mapping, and `docs/WEEK14-SUBMISSION-HANDOFF.md` are ready for student review before commit and push. |
+| Final evidence and submission handoff checkpoint | complete | Approved, committed as `298f6efedca30653478bea76c12d75ebdff8ccf9`, and pushed to `origin/week14-secure-integration`. |
 | Final tag and GitHub release | pending | Create `v14.0.0-week14-secure-integration` only after every required Week 14 checkpoint is complete and approved. |
