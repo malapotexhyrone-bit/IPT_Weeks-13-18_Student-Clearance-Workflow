@@ -10,7 +10,7 @@
 - Week 13 baseline: commit `6a73790b433ec65d34189aa3e3d7add80280b761`, tag `v13.0.0-week13-automation`
 - Checkpoint 1: approved, committed as `7cf96482235715d81f6b99dea45d21b44cf6fe98`, and preserved on `origin/week14-secure-integration`
 - Checkpoint 2: approved, committed as `5f7bbc030578bd557b94ee342bd65f7a23be54eb`, and pushed to `origin/week14-secure-integration`
-- Checkpoint 3: approved by the student on 2026-11-08 for commit and push; the resulting commit hash and remote status are recorded in the checkpoint handover
+- Checkpoint 3: approved, committed as `d6d65e8`, and pushed to `origin/week14-secure-integration`
 - Approval: student confirmed instructor approval and registration for Project 8 on 2026-11-07; official registry not inspected
 
 ## Checkpoint 1 completed locally
@@ -48,6 +48,8 @@
 - Real VS Code captures: `evidence/week-14/screenshots/source-code/` and `evidence/week-14/screenshots/tests/`
 - Real Flutter browser captures: `evidence/week-14/screenshots/application/`
 - Main Week 14 assessment report: `docs/WEEK14-SECURE-INTEGRATION-REPORT.md`
+- Central combined evidence document: `C:\Users\Admin\Documents\IPT\Evidence Document\Week-14-Screenshot-Journey-and-Evidence.docx` (outside Git)
+- Week 14 submission handoff: `docs/WEEK14-SUBMISSION-HANDOFF.md`
 
 ## Checkpoint 3 completed locally
 
@@ -58,11 +60,19 @@
 - Completed the IA5 build record with code excerpts, protected configuration, verification results, failure recovery, evidence map, and reproduction steps.
 - Prepared reflection prompts for the student's own verified wording and a Week 14 technical-defense question set.
 
+## Final evidence checkpoint ready for review
+
+- Created one combined 39-page Week 14 DOCX with the exact student identification, the full weekly journey, requirement mapping, and thirteen screenshots. Four transient UI states are clearly labeled controlled simulations rather than live backend outcomes.
+- Rendered the complete document through Microsoft Word and visually inspected the content and evidence pages; corrected the alternating-page clipping found during QA.
+- Ran document audits: eight inline images were detected, heading order was corrected, and no high-severity accessibility finding remains. The remaining medium notices concern the eight screenshot layout tables, which intentionally have no data-table header row.
+- Kept the original screenshot files in `evidence/week-14/screenshots/` and kept the central DOCX outside Git as required.
+- Added five accurately labeled Flutter Web states for validation, loading, empty, authorization, and network-error presentation. Four use controlled intercepted fictional responses and are not represented as live backend results.
+
 ## Pending milestones
 
-1. Create the single central Week 14 DOCX after the documentation checkpoint; render and visually inspect every page.
-2. Ask the student to review and personalize the reflection worksheet and rehearse the defense questions.
-3. After final technical and documentation approval, propose the exact Week 14 tag, release title, target commit, and release notes for separate approval.
+1. Student reviews and approves the final evidence/submission-handoff checkpoint before commit and push.
+2. Student personalizes and verifies the reflection worksheet in their own words and rehearses the defense questions.
+3. After the final checkpoint is approved and pushed, propose the exact Week 14 tag, release title, target commit, and release notes for separate approval.
 
 ## Known constraints and honest gaps
 

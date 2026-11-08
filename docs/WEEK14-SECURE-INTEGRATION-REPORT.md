@@ -14,7 +14,7 @@
 
 ## Report purpose and conclusion
 
-Week 14 extends the approved Week 13 Student Clearance Workflow with password authentication, server-enforced role and ownership rules, protected configuration, a minimized sender-and-receiver exchange, authenticated encryption, calling-service authentication, replay protection, and verified local HTTPS. The implementation passed 47 backend tests with 201 assertions and six Flutter widget tests. A real browser journey verified generic invalid credentials, student and Library-office role boundaries, an administrator-only secure exchange, and responsive desktop and narrow layouts.
+Week 14 extends the approved Week 13 Student Clearance Workflow with password authentication, server-enforced role and ownership rules, protected configuration, a minimized sender-and-receiver exchange, authenticated encryption, calling-service authentication, replay protection, and verified local HTTPS. The implementation passed 47 backend tests with 201 assertions and six Flutter widget tests. A real browser journey verified generic invalid credentials, student and Library-office role boundaries, an administrator-only secure exchange, and responsive desktop and narrow layouts. Five additional controlled captures verify validation, loading, empty, authorization, and network-error presentation against the actual Flutter build; intercepted fictional responses are disclosed as UI-state simulations rather than live backend outcomes.
 
 The build meets the bounded module laboratory and Project 8 security requirements in a controlled local environment. It is not a production university deployment. The receiver is locally controlled, the Flutter development page is served over local HTTP while its API requests use trusted HTTPS, and production certificate operations, centralized key management, log access control, backup protection, and independent receiver ownership remain outside the verified scope.
 
@@ -192,7 +192,7 @@ Does the implemented secure exchange provide reproducible evidence for source co
 | Full regression | Ran all Laravel tests and Flutter checks | 47 backend tests with 201 assertions, no Flutter analysis issue, six widget tests | authentication test record |
 | Secret scanning | Searched tracked candidates and reviewed captures | No live secret or temporary plaintext credential remained | evidence index and cleanup record |
 | Dependency review | Ran Composer audit, updated affected Symfony packages, reran regression | Seven initial advisories were remediated; final audit was clean on the execution date | `EVID-W14-AUDIT-001` |
-| Browser review | Executed desktop/narrow login and all three roles | Six real states passed and were visually inspected | `EVID-W14-BROWSER-001` and application screenshots |
+| Browser review | Executed desktop/narrow login and all three roles, then exercised controlled validation/loading/empty/authorization/network states | Six real end-to-end states and five controlled UI states passed visual inspection | `EVID-W14-BROWSER-001`, `EVID-W14-UI-STATES-001`, and application screenshots |
 
 ### Alternatives and improvement decision
 
@@ -318,8 +318,9 @@ if ($user === null || ! $passwordMatches) {
 | Composer audit after remediation | No known advisories on 2026-11-07 |
 | Flutter analysis | No issues found |
 | Flutter widget tests | 6 tests passed |
-| Real browser journey | 6 states passed and visually inspected |
-| Screenshot-only folder rule | 8 images and 0 non-image files |
+| Real browser journey | 6 end-to-end states passed and were visually inspected |
+| Controlled Flutter UI states | 5 validation/loading/empty/authorization/network states passed visual inspection |
+| Screenshot-only folder rule | 13 images and 0 non-image files |
 | Temporary plaintext credentials | 0 files remaining after browser capture |
 
 ## Chronological implementation journey
@@ -334,7 +335,8 @@ if ($user === null || ! $passwordMatches) {
 8. Added the Flutter administrator protected-exchange form and kept the student and office dashboards bound to the authenticated identity.
 9. Preserved and corrected the cached-guard, off-screen widget, missing-import, and browser-automation findings.
 10. Installed the controlled certificate in the current user's trust store, captured six real browser states without disabling certificate validation, and deleted every temporary plaintext browser credential.
-11. Consolidated the evidence index, activities, SA8, IA5, risks, limitations, and defense preparation for the documentation checkpoint.
+11. Captured and clearly labeled five additional Flutter states for validation, loading, empty, authorization, and network-error presentation.
+12. Consolidated the evidence index, activities, SA8, IA5, risks, limitations, and defense preparation for the documentation checkpoint.
 
 ## Failures fixes and recovery
 
@@ -360,7 +362,8 @@ if ($user === null || ! $passwordMatches) {
 | Responsive Flutter Web | EVID-W14-APP-001 and APP-006 |
 | Dependency review | EVID-W14-AUDIT-001 |
 | Failure and recovery | EVID-W14-SETUP-FAIL-001 and EVID-W14-AUTH-FAIL-001 |
-| Real browser journey | EVID-W14-BROWSER-001 and six application screenshots |
+| Real browser journey | EVID-W14-BROWSER-001 and six end-to-end application screenshots |
+| Flutter validation loading empty authorization and network states | EVID-W14-UI-STATES-001 and APP-007 through APP-011 |
 | Decision and residual risk | Activity 1, Activity 2, SA8, and the residual-risk register in this report |
 
 ## Reproduction steps

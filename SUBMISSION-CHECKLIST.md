@@ -20,15 +20,17 @@ Status values are `complete`, `pending`, or `blocked`.
 | Safe logs and receipts | complete | Receipts store metadata and a SHA-256 hash only; secret scan found no live key or credential in tracked candidates. |
 | Password authentication | complete | Laravel hashing, generic credential errors, throttling, two-hour Sanctum token, and logout revocation pass five tests / 31 assertions. |
 | Least-privilege Flutter role flows | complete | Flutter renders the student, assigned Library-office, or administrator dashboard only from the authenticated server response; six widget tests and real browser captures verify the three role-bound views. |
+| Flutter validation, loading, empty, authorization, and network-error states | complete | Five controlled application screenshots verify these UI states against the actual Flutter build. Intercepted fictional responses are disclosed as UI-state simulations rather than live backend evidence. |
 | Success plus at least four adverse paths in build evidence | complete | Real browser captures preserve accepted exchange and invalid-credential behavior; automated evidence covers alteration, wrong key, invalid HMAC, expiry, replay, unavailable key, malformed input, missing CA, and authorization rejection. |
 | Activity 1: review five cryptographic uses | complete | The main report corrects five proposed uses, compares alternatives, states assumptions, includes an adverse case, and preserves a labeled one-page interpretation. |
 | Activity 2: secure-exchange review | complete | The main report covers source, configuration, HTTPS, tamper, secret, dependency, browser, and residual-risk review with a labeled one-page interpretation. |
 | SA8 Secure Integration Architecture Case | complete | The main report includes the threat summary, data flow, control rationale, alternatives, consequences, decision record, acceptance outcomes, and limitations. |
 | IA5 Secure Data Exchange Build | complete | The main report maps the working build, code excerpts, protected configuration, tests, failures, evidence, and reproduction steps. |
 | Main Week 14 report | complete | `docs/WEEK14-SECURE-INTEGRATION-REPORT.md` consolidates the activities, SA8, IA5, journey, limitations, maintenance, and defense preparation. |
-| Central evidence DOCX | pending | Create `Evidence Document/Week-14-Screenshot-Journey-and-Evidence.docx` only at the end, then render and inspect every page. |
+| Central evidence DOCX | complete | `C:\Users\Admin\Documents\IPT\Evidence Document\Week-14-Screenshot-Journey-and-Evidence.docx` is the primary combined evidence file. Its 39 pages and thirteen embedded screenshots were rendered and visually inspected; four transient UI states are explicitly labeled controlled simulations. The file is outside Git. |
 | Student reflection and individual contribution | pending | An evidence-backed worksheet is prepared, but the student must personalize and verify the answers in their own words. |
 | Checkpoint 1 commit and push | complete | Approved and preserved as `7cf96482235715d81f6b99dea45d21b44cf6fe98` on `week14-secure-integration`. |
 | Checkpoint 2 commit and push | complete | Approved and pushed as `5f7bbc030578bd557b94ee342bd65f7a23be54eb` on `week14-secure-integration`. |
-| Checkpoint 3 documentation commit and push | complete | Approved by the student on 2026-11-08 and included in the current documentation checkpoint; the resulting hash and remote status are recorded in the checkpoint handover. |
+| Checkpoint 3 documentation commit and push | complete | Approved and pushed as `d6d65e8` on `week14-secure-integration`. |
+| Final evidence and submission handoff checkpoint | pending | Central-DOCX status, evidence mapping, and `docs/WEEK14-SUBMISSION-HANDOFF.md` are ready for student review before commit and push. |
 | Final tag and GitHub release | pending | Create `v14.0.0-week14-secure-integration` only after every required Week 14 checkpoint is complete and approved. |

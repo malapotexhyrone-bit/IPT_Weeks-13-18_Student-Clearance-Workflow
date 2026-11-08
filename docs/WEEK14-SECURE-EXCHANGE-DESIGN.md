@@ -97,5 +97,5 @@ The setup tool generates the AES key and HMAC secret with the operating system r
 - The receiver is a controlled local endpoint, not a separately owned university system.
 - The local certificate is trusted only for the current Windows user and is not a public production certificate.
 - The Flutter development page is served over local HTTP while its credential-bearing API calls use the trusted local HTTPS API.
-- Activity 1, Activity 2, SA8, IA5, and the main Week 14 report are consolidated in `docs/WEEK14-SECURE-INTEGRATION-REPORT.md`; student reflection verification and the final central evidence DOCX remain pending.
+- Activity 1, Activity 2, SA8, IA5, and the main Week 14 report are consolidated in `docs/WEEK14-SECURE-INTEGRATION-REPORT.md`. The final central evidence DOCX is complete outside Git; student reflection verification remains pending.
 - Key rotation, revocation, backup protection, centralized secret management, and production certificate operations are documented risks, not demonstrated production capabilities.

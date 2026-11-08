@@ -18,6 +18,7 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 - Five authentication tests and six Flutter widget tests; the full backend suite now passes 47 tests and 201 assertions.
 - Six visually inspected real Flutter browser captures covering desktop/narrow login, invalid credentials, student role, Library role, and an accepted administrator secure exchange.
 - Consolidated Week 14 report covering both activities, SA8, IA5, threat and risk records, decisions, reproduction, limitations, and defense preparation.
+- Added controlled Flutter Web evidence for validation, loading, empty, authorization, and network-error presentation, with the simulation boundary recorded separately from live backend evidence.
 
 ### Security
 
@@ -26,7 +27,7 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 
 ### Pending
 
-- Central evidence DOCX, student-verified reflection, documentation checkpoint commit, final tag, and release.
+- Student-verified reflection, final evidence/handoff checkpoint commit, final tag, and release. The combined central evidence DOCX is complete outside Git.
 
 ## v13.0.0-week13-automation - Week 13 Advanced Automation and Scripting
 

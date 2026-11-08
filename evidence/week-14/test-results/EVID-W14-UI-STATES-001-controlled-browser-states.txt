@@ -1,0 +1,22 @@
+EVIDENCE ID: EVID-W14-UI-STATES-001
+TITLE: Controlled Flutter Web validation loading empty authorization and network states
+DATE: 2026-11-08 (Asia/Manila)
+APPLICATION: Actual Week 14 Flutter Web build at http://127.0.0.1:7357
+DATA: Fictional controlled UI-only identities and responses
+
+REAL VALIDATION STATE
+An empty login form was submitted in the user-opened Chrome window. Flutter displayed required email and password feedback before sending an API request. The saved image is EVID-W14-APP-007-validation-state.png.
+
+CONTROLLED UI-STATE SIMULATIONS
+The actual Flutter build was opened in an automated Chrome session. Browser request interception supplied bounded fictional responses so otherwise transient or destructive states could be preserved without changing the database or exposing credentials.
+
+1. Loading: the office-task response was delayed while Flutter displayed its loading skeleton. Evidence: EVID-W14-APP-008-loading-state.png.
+2. Empty: a fictional authenticated Library reviewer received an empty office-task list. Flutter displayed the no-assigned-tasks state. Evidence: EVID-W14-APP-009-empty-office-state.png.
+3. Authorization: a fictional authenticated student received a controlled HTTP 403 response. Flutter displayed Access not permitted and the safe response message. Evidence: EVID-W14-APP-010-authorization-state.png.
+4. Network: the fictional login request was aborted as connection refused. Flutter displayed that the trusted local HTTPS API could not be reached. Evidence: EVID-W14-APP-011-network-error-state.png.
+
+BOUNDARY
+These four intercepted-response screenshots verify Flutter presentation and user feedback only. They do not replace the live HTTPS, authentication, authorization, or backend adverse tests. Live end-to-end browser behavior remains recorded in EVID-W14-BROWSER-001, and executed backend behavior remains recorded in EVID-W14-SEC-001 and EVID-W14-AUTH-001.
+
+OUTCOME
+PASS — the actual Flutter build visibly represented validation, loading, empty, authorization, and network-error states using controlled fictional data. No real password, token, production endpoint, or personal record was used or captured.
