@@ -5,7 +5,7 @@
 - Student: Malapote, Xhyrone Wayne N.
 - Course and section: BSIT 3-A
 - Project: Project 8 Student Clearance Workflow
-- Executed: 2026-11-10, Asia/Manila
+- Executed: 2026-11-10 to 2026-11-11, Asia/Manila
 - Branch: `week-15-testing-hardening`
 - Controlled data: fictional `example.test` identities and disposable SQLite databases only
 
@@ -22,7 +22,8 @@ This record covers the API collection, focused hardening tests, and complete reg
 | Laravel Pint | passed | `LABORATORY-LOG.md` |
 | Composer locked audit | no known vulnerability advisories | `LABORATORY-LOG.md` |
 | Flutter analysis | no issues | `LABORATORY-LOG.md` |
-| Existing Flutter widget regression | 6 passed | `LABORATORY-LOG.md` |
+| Focused Week 15 Flutter state suite | 8 passed | `W15-FLUTTER-REGRESSION.json` |
+| Complete Flutter widget regression | 14 passed | `W15-FLUTTER-REGRESSION.json` |
 
 ## Preserved failed runs and corrections
 

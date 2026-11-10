@@ -102,9 +102,9 @@ Status values are `baseline`, `planned`, `executed`, `failed`, or `passed`.
 | W15-TC-013 | Dependency unavailable | Reliability | Local gateway or active-office dependency unavailable | Safe `503` or bounded human-action route; consistent data | API collection and Laravel test | baseline |
 | W15-TC-014 | Recovery after transient failure | Recovery | First controlled delivery attempt fails, next succeeds | Same correlation context; success within limit; one final effect | Failure-injection log and Laravel test | baseline |
 | W15-TC-015 | Permanent failure | Recovery and human action | Controlled non-retryable or exhausted failure | Processing stops; one human-action item; no secret leakage | Laravel test and sanitized log | baseline |
-| W15-TC-016 | Flutter required states | UI behavior | Controlled API fakes or intercepts | Loading, success, empty, validation, authentication, authorization, network, server-error, and recovery feedback are understandable | Widget tests and labeled browser evidence | planned |
-| W15-TC-017 | Responsive and keyboard operation | Accessibility and usability | Desktop, tablet where practical, and narrow browser | Core actions remain visible and keyboard-operable with sensible focus and status messages | Genuine browser screenshots and checklist | planned |
-| W15-TC-018 | Full regression after hardening | Regression | Final Week 15 build | Backend, Flutter, formatting, analysis, dependency audit, and collection pass with recorded counts | Saved test result files | planned |
+| W15-TC-016 | Flutter required states | UI behavior | Controlled API fakes or intercepts | Loading, success, empty, validation, authentication, authorization, network, server-error, and recovery feedback are understandable | `frontend/test/week15_state_test.dart`; `W15-FLUTTER-REGRESSION.json` | passed |
+| W15-TC-017 | Responsive and keyboard operation | Accessibility and usability | Desktop and responsive browser; semantics-enabled controls | Login and retry actions remain visible and operable with an understandable status message | `W15-APP-001`; `W15-APP-002` | executed; broader role journey inherited from Week 14 |
+| W15-TC-018 | Full regression after hardening | Regression | Current Checkpoint 3 working tree | 53 backend tests/254 assertions, 14 Flutter tests, formatting, analysis, audit, and 234 API assertions pass | Saved backend, API, and Flutter result files | passed |
 
 ## Measurable acceptance criteria
 

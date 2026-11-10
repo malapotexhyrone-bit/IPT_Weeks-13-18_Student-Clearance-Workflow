@@ -128,3 +128,39 @@ The API/backend hardening milestone is implemented and verified locally but is n
 - Corrections made during verification: replaced obsolete preparation-only status language and constrained the final mapping table to the portrait-page margins
 - Final visual result: all nine pages readable with no clipping, overflow, unexpected blank page, or exposed secret observed
 - Repository boundary: the central DOCX remains outside Git; the original source screenshot remains in this repository
+
+## Entry 008 API hardening checkpoint approved and pushed
+
+- Student approval: received after review of the 30-file staging list, verification results, proposed commit message, and defense summary
+- Commit: `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b`
+- Message: `feat: harden Week 15 API contracts and tests`
+- Remote: `origin/week-15-testing-hardening`; local and remote references matched after push
+- Boundary: merge, tag, GitHub Release, and later checkpoints remained unauthorized
+
+## Entry 009 Flutter state regression and browser evidence
+
+- Executed: 2026-11-11, Asia/Manila
+- Added `frontend/test/week15_state_test.dart` with eight focused scenarios: loading-to-empty, empty office queue, forbidden role exit, safe correlated not-found, network retry recovery, timeout, server error, and empty administrator state
+- Focused Flutter result: 8 passed
+- Complete Flutter regression: 14 passed; JSON event evidence saved as `test-results/W15-FLUTTER-REGRESSION.json`
+- Genuine desktop capture: `screenshots/application/W15-APP-001-login-desktop.jpg`
+- Genuine responsive failure capture: `screenshots/application/W15-APP-002-unavailable-api-narrow.jpg`
+- Browser result: with the controlled HTTPS API unavailable, the real Flutter build displayed one safe actionable message. A repeated sign-in attempt retained exactly one message and the retry action remained available.
+- Privacy boundary: only the fictional `student@example.test` address is visible; the password remained obscured and no token, environment value, certificate detail, private URL, or real student record appears
+- Limitation: this browser run demonstrates presentation and bounded recovery feedback, not a live successful backend workflow; successful role journeys remain preserved in Week 14 evidence and API behavior is independently covered by the Week 15 collection and backend tests
+
+## Entry 010 Checkpoint 3 central evidence update
+
+- Updated central document: `C:\Users\Admin\Documents\IPT\Evidence Document\Week-15-Screenshot-Journey-and-Evidence.docx`
+- Added the eight-scenario/14-test Flutter result summary and embedded `W15-APP-001` and `W15-APP-002` with requirement, source, privacy, retest, and limitation mappings
+- Corrected the cover and approval boundary to record pushed Checkpoint 2 and local Checkpoint 3 accurately
+- Verification: exported through installed Microsoft Word as 12 pages and visually inspected page by page
+- Corrections during verification: replaced one stale pre-commit limitation, constrained prior table width, and reset a clipped page-12 heading indentation
+- Final visual result: all 12 pages readable with no clipping, overflow, unexpected blank page, or exposed secret observed
+
+## Entry 011 Test-result screenshot gap
+
+- A genuine VS Code terminal capture was attempted after opening the real `week15_state_test.dart` file.
+- VS Code's terminal accessibility layer did not accept the automated command input reliably. The failed terminal view was not saved and is not presented as a passing result.
+- The repeatable evidence remains `test-results/W15-FLUTTER-REGRESSION.json`, whose final `done` event reports success and whose 16 test-start events comprise two synthetic file-loading events plus 14 actual tests.
+- Manual capture steps: open this repository in Visual Studio Code; open a terminal at `frontend`; run `flutter test test\week15_state_test.dart`; wait for `All tests passed!`; confirm no credentials or unrelated windows are visible; save the capture as `evidence/week-15/screenshots/tests/W15-TEST-001-flutter-focused-pass.png`; then add its requirement/result mapping to this log and `EVIDENCE-INDEX.md`.

@@ -20,17 +20,20 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 - Added safe correlated API not-found and rate-limit responses, standard login validation, defensive response headers, and exact idempotent replay without duplicate workflow records.
 - Added a second fictional student to verify cross-student object authorization.
 - Preserved collection execution failures and corrected reruns without exposing generated credentials or tokens.
+- Added eight focused Flutter widget scenarios for loading, empty, forbidden, not-found, network, timeout, server-error, and retry/recovery states.
+- Added genuine desktop login and responsive unavailable-HTTPS-API browser captures from the actual Flutter Web build.
 
 ### Verified
 
 - Focused hardening: 6 passed, 52 assertions after the preserved 6-failure pre-fix run.
 - Full backend regression: 53 passed, 254 assertions.
-- Pint, Composer locked audit, Flutter analysis, and six existing Flutter widget tests pass.
+- Pint, Composer locked audit, and Flutter analysis pass; the complete Flutter regression passes 14 tests.
+- The API hardening checkpoint was approved, committed as `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b`, and pushed to `origin/week-15-testing-hardening`.
 
 ### Pending
 
-- Explicit approval before staging, committing, or pushing the API hardening checkpoint.
-- Flutter required-state expansion, browser evidence, activities, IA6, reflection, central evidence update, and final portfolio.
+- Approval before staging, committing, or pushing the Flutter/browser evidence checkpoint.
+- Activities, IA6, reflection, central evidence completion, test-result screenshot, and final portfolio.
 
 ## Unreleased - Week 14 Secure Data Exchange and Encryption
 

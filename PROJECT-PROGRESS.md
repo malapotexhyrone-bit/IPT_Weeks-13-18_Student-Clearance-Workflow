@@ -7,6 +7,7 @@
 - Branch: `week-15-testing-hardening`
 - Baseline commit: `2fe765ac2d82037fda596443339c87db12087f7f`
 - Preparation commit: `6b18a0b5da52a1d582f308aa09ed5c791afb036a` (pushed)
+- API hardening commit: `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b` (pushed)
 - Previous tag: `v14.0.0-week14-secure-integration`
 - Planned tag: `v15.0.0-week15-testing-hardening`
 - Project approval: student-confirmed instructor approval and registration on 2026-11-07; official registry not inspected
@@ -59,19 +60,20 @@ The verified environment is PHP 8.2.12, Composer 2.10.2, Flutter 3.47.8, Dart 3.
 
 ### Current checkpoint state
 
-- API hardening implementation: complete locally and verified
-- Staged/committed/pushed: no; awaiting the student's explicit checkpoint approval
-- Proposed commit message: `feat: harden Week 15 API contracts and tests`
+- API hardening implementation: approved, committed, and pushed; local and remote branch references matched `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b`
+- Flutter state expansion: eight focused scenarios pass; complete Flutter regression is 14 passed
+- Browser evidence: genuine desktop login and responsive unavailable-HTTPS-API states captured; a repeated sign-in kept one safe error message
+- Staged/committed/pushed for the Flutter/browser checkpoint: no; implementation and evidence are being assembled locally
 - Merge, tag, and release: not authorized
-- Central evidence DOCX: Checkpoint 2 results and genuine source evidence incorporated; exported through Microsoft Word and visually inspected across all nine pages after correcting obsolete status text and a table-width overflow
+- Central evidence DOCX: Checkpoint 3 Flutter results and two browser captures incorporated; exported through Microsoft Word as 12 pages and visually inspected page by page after correcting stale status, table width, and heading-indentation defects
 
 ### Next milestone after this checkpoint
 
-Expand Flutter tests for required loading, empty, authorization, network, server-error, and retry states; perform genuine browser checks; then complete the failure-analysis activities and IA6 documentation.
+Complete the requirements-to-results interpretation, bounded hardening activity, IA6 report, test-result screenshot, and central evidence update before presenting the Flutter/documentation checkpoint for approval.
 
 ### Week 15 constraints
 
-- The API collection and backend hardening tests are executed, but the checkpoint is not yet approved or committed.
+- The API collection and backend hardening checkpoint is committed and pushed; the Flutter/browser work remains local and uncommitted.
 - Controlled local services do not represent production university systems.
 - The Week 14 Git tag exists, but the matching GitHub Release is absent.
 - No instructor grade, stakeholder acceptance, production readiness, completed viva, or completed student reflection is claimed.

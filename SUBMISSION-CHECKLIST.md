@@ -22,14 +22,15 @@
 | Timeout, unavailable-dependency, controlled-failure, and recovery cases | complete | Existing automation and secure-exchange regression covers timeout/dependency/retry/permanent-human-action behavior; public failure injection remains intentionally absent. |
 | Topic 3 failure-injection log and recovery findings | in progress | Automated failure paths pass; collection execution failures and recoveries are preserved. Activity interpretation and selected screenshot evidence remain. |
 | Topic 4 ranked hardening backlog and at least three fixes | complete | Five weaknesses fixed; focused suite moved from 6 failed/20 assertions to 6 passed/52 assertions; residual risks recorded. |
-| Flutter required-state tests and responsive browser checks | pending | Expand widget tests and capture genuine desktop and narrow evidence. |
-| Topic 5 defect record, targeted retests, and regression | in progress | API/backend defect and rerun evidence complete; 53 backend tests/254 assertions plus Pint, audit, Flutter analysis, and 6 existing widget tests pass. Flutter state expansion remains. |
+| Flutter required-state tests and responsive browser checks | complete | Eight focused Week 15 scenarios pass; complete Flutter regression is 14 passed. Genuine desktop login and responsive unavailable-API screenshots are preserved with the controlled-service boundary stated. |
+| Topic 5 defect record, targeted retests, and regression | in progress | API/backend defect and rerun evidence complete; 53 backend tests/254 assertions plus Pint, audit, Flutter analysis, and 14 Flutter tests pass. Final cross-artifact interpretation remains. |
 | Activity 1 and one-page interpretation | pending | Complete after executed traceability evidence exists. |
 | Activity 2 and one-page interpretation | pending | Review weak configuration and preserve before-and-after evidence. |
 | IA6 report | pending | Include strategy, collection, data, results, logs, defects, changes, regression, and remaining risks. |
+| Genuine focused Flutter test screenshot | pending manual capture | VS Code terminal automation did not accept the command reliably; no false pass image was saved. Follow laboratory log Entry 011 and save `W15-TEST-001-flutter-focused-pass.png`. |
 | Self-check and reflection | pending | Student must personalize and verify independent-contribution wording. |
 | Preparation checkpoint commit and push | complete | Approved, committed as `6b18a0b5da52a1d582f308aa09ed5c791afb036a`, and pushed to `origin/week-15-testing-hardening`. |
-| API hardening checkpoint commit and push | pending | Implementation and verification are complete locally; await explicit student approval before staging, commit, or push. |
+| API hardening checkpoint commit and push | complete | Approved and pushed as `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b` on `origin/week-15-testing-hardening`; local and remote references matched. |
 | Later commits, merge, Week 15 tag, and release | pending | Each requires the specified separate approval. |
 
 ## Preserved Week 14 checklist
