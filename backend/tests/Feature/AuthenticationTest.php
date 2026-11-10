@@ -64,7 +64,8 @@ class AuthenticationTest extends TestCase
             'password' => '',
         ])
             ->assertUnprocessable()
-            ->assertJsonValidationErrors(['email', 'password']);
+            ->assertJsonPath('error.code', 'VALIDATION_FAILED')
+            ->assertJsonValidationErrors(['email', 'password'], 'error.fields');
     }
 
     public function test_repeated_failed_login_is_rate_limited(): void

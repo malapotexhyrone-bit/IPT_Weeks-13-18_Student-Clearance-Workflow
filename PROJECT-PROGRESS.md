@@ -6,6 +6,7 @@
 - Project: Project 8 Student Clearance Workflow
 - Branch: `week-15-testing-hardening`
 - Baseline commit: `2fe765ac2d82037fda596443339c87db12087f7f`
+- Preparation commit: `6b18a0b5da52a1d582f308aa09ed5c791afb036a` (pushed)
 - Previous tag: `v14.0.0-week14-secure-integration`
 - Planned tag: `v15.0.0-week15-testing-hardening`
 - Project approval: student-confirmed instructor approval and registration on 2026-11-07; official registry not inspected
@@ -37,20 +38,40 @@ The verified environment is PHP 8.2.12, Composer 2.10.2, Flutter 3.47.8, Dart 3.
 - Added the bounded workflow, trust-boundary diagram, Flutter flow, failure prediction, controlled data, evidence index, laboratory log, and pre-change baseline record.
 - Updated the active-week README, changelog, progress record, and checklist without claiming planned tests have passed.
 
-### Current approval status
+### Preparation checkpoint status
 
 - Preparation checkpoint: explicitly approved by the student on 2026-11-10 at 19:58 +08:00
-- Commit and push: authorized for the approved preparation scope; resulting commit and remote state will be reported in the checkpoint handoff
+- Commit and push: completed at `6b18a0b5da52a1d582f308aa09ed5c791afb036a`; local and remote branch references matched
 - Merge, tag, and release: not authorized
 - Central evidence DOCX: preparation version completed with a genuine VS Code capture and seven-page visual inspection after layout correction
 
-### Next milestone after approval
+### API hardening checkpoint work
 
-Implement the versioned API collection and new contract, boundary, authorization, not-found, dependency-failure, recovery, security-header, and Flutter-state tests. Preserve actual failures, rank and fix at least three justified weaknesses, then run targeted and complete regression checks.
+- Added an executable Postman 2.1 collection with 36 requests and a no-secrets environment template.
+- Added six focused hardening tests and preserved the pre-fix result: 6 failed, 20 assertions.
+- Fixed five ranked weaknesses: safe correlated not-found responses, exact idempotent replay, layered login throttling with a standard `429`, standard login validation, and defensive API headers.
+- Post-fix focused result: 6 passed, 52 assertions.
+- Final isolated collection run: 36 requests, 234 assertions, 0 failures.
+- Complete backend regression: 53 passed, 254 assertions.
+- Supporting checks: Pint passed; Composer locked audit reported no known advisories; Flutter analysis found no issues; six existing widget tests passed.
+- Preserved three collection-run failures and their diagnoses: raw JSON password escaping, sandbox network separation, and non-persistent rate-limit cache.
+- Final report and environment secret checks found no bearer token, access-token value, one-time password, or populated sensitive template value.
+
+### Current checkpoint state
+
+- API hardening implementation: complete locally and verified
+- Staged/committed/pushed: no; awaiting the student's explicit checkpoint approval
+- Proposed commit message: `feat: harden Week 15 API contracts and tests`
+- Merge, tag, and release: not authorized
+- Central evidence DOCX: Checkpoint 2 results and genuine source evidence incorporated; exported through Microsoft Word and visually inspected across all nine pages after correcting obsolete status text and a table-width overflow
+
+### Next milestone after this checkpoint
+
+Expand Flutter tests for required loading, empty, authorization, network, server-error, and retry states; perform genuine browser checks; then complete the failure-analysis activities and IA6 documentation.
 
 ### Week 15 constraints
 
-- New collection and hardening tests are not yet executed.
+- The API collection and backend hardening tests are executed, but the checkpoint is not yet approved or committed.
 - Controlled local services do not represent production university systems.
 - The Week 14 Git tag exists, but the matching GitHub Release is absent.
 - No instructor grade, stakeholder acceptance, production readiness, completed viva, or completed student reflection is claimed.

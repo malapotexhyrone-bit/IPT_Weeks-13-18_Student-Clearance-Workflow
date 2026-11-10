@@ -17,18 +17,19 @@
 | Measurable acceptance criteria | complete | Normal, invalid, authorization, dependency, recovery, hardening, UI, and regression criteria are defined. |
 | Controlled fictional test data | complete | Nonsecret `example.test` identities and boundary values in `controlled-data.json`. |
 | Preparation central evidence DOCX | complete | Includes genuine VS Code evidence; all seven pages were rendered and visually inspected after correcting two layout defects. |
-| Topic 2 API collection and contract evidence | pending | Implement after preparation checkpoint approval. |
-| Normal, invalid, boundary, authentication, authorization, not-found, and duplicate cases | pending | Add to the collection and targeted automated suites. |
-| Timeout, unavailable-dependency, controlled-failure, and recovery cases | pending | Preserve prediction, actual output, safe signals, and recovery. |
-| Topic 3 failure-injection log and recovery findings | pending | Execute a controlled bounded failure after approval. |
-| Topic 4 ranked hardening backlog and at least three fixes | pending | Preserve before-and-after tests and residual risk. |
+| Topic 2 API collection and contract evidence | complete | Versioned Postman 2.1 collection executed: 36 requests, 234 assertions, 0 failures; no-secrets environment template included. |
+| Normal, invalid, boundary, authentication, authorization, not-found, and duplicate cases | complete | Collection and focused Laravel suites cover these cases with controlled fictional data. |
+| Timeout, unavailable-dependency, controlled-failure, and recovery cases | complete | Existing automation and secure-exchange regression covers timeout/dependency/retry/permanent-human-action behavior; public failure injection remains intentionally absent. |
+| Topic 3 failure-injection log and recovery findings | in progress | Automated failure paths pass; collection execution failures and recoveries are preserved. Activity interpretation and selected screenshot evidence remain. |
+| Topic 4 ranked hardening backlog and at least three fixes | complete | Five weaknesses fixed; focused suite moved from 6 failed/20 assertions to 6 passed/52 assertions; residual risks recorded. |
 | Flutter required-state tests and responsive browser checks | pending | Expand widget tests and capture genuine desktop and narrow evidence. |
-| Topic 5 defect record, targeted retests, and regression | pending | Preserve failures, causes, corrections, and complete results. |
+| Topic 5 defect record, targeted retests, and regression | in progress | API/backend defect and rerun evidence complete; 53 backend tests/254 assertions plus Pint, audit, Flutter analysis, and 6 existing widget tests pass. Flutter state expansion remains. |
 | Activity 1 and one-page interpretation | pending | Complete after executed traceability evidence exists. |
 | Activity 2 and one-page interpretation | pending | Review weak configuration and preserve before-and-after evidence. |
 | IA6 report | pending | Include strategy, collection, data, results, logs, defects, changes, regression, and remaining risks. |
 | Self-check and reflection | pending | Student must personalize and verify independent-contribution wording. |
-| Preparation checkpoint commit and push | pending | Student approval was recorded on 2026-11-10 at 19:58 +08:00; execute the authorized commit and push, then report the resulting hash and remote branch. |
+| Preparation checkpoint commit and push | complete | Approved, committed as `6b18a0b5da52a1d582f308aa09ed5c791afb036a`, and pushed to `origin/week-15-testing-hardening`. |
+| API hardening checkpoint commit and push | pending | Implementation and verification are complete locally; await explicit student approval before staging, commit, or push. |
 | Later commits, merge, Week 15 tag, and release | pending | Each requires the specified separate approval. |
 
 ## Preserved Week 14 checklist

@@ -11,6 +11,10 @@ class AttachCorrelationId
 {
     public function handle(Request $request, Closure $next): Response
     {
+        if (! $request->is('api/*')) {
+            return $next($request);
+        }
+
         $requestedId = strtoupper((string) $request->header('X-Correlation-ID'));
         $correlationId = Str::isUlid($requestedId)
             ? $requestedId

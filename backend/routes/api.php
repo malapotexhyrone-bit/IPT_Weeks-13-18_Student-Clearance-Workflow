@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function (): void {
     Route::post('/auth/login', [AuthenticationController::class, 'store'])
-        ->middleware('throttle:5,1');
+        ->middleware('throttle:login');
     Route::post('/secure-exchange/receive', [SecureExchangeController::class, 'receive'])
         ->middleware('exchange.auth');
 });

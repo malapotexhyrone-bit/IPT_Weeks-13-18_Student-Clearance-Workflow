@@ -1,0 +1,1171 @@
+{
+  "evidence_id": "W15-API-001",
+  "executed_at": "2026-11-10T12:21:19.526Z",
+  "environment": "isolated temporary SQLite database and localhost API on port 8015",
+  "collection": "week15-student-clearance.postman_collection.json",
+  "controlled_data": "fictional example.test identities only",
+  "requests": 36,
+  "assertions": 234,
+  "failed_assertions": 0,
+  "outcome": "passed",
+  "failures": [],
+  "executions": [
+    {
+      "item": "Invalid login payload",
+      "response_code": 422,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Invalid login is rejected",
+          "outcome": "passed"
+        },
+        {
+          "name": "Validation uses the standard contract",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — student",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — peer student",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — Registrar reviewer",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — Library reviewer",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — Accounting reviewer",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — Student Affairs reviewer",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Login — administrator",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Login succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Initiate clearance — normal path",
+      "response_code": 201,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Clearance is created",
+          "outcome": "passed"
+        },
+        {
+          "name": "First request is not a replay",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Replay identical idempotency key",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Replay returns the existing result",
+          "outcome": "passed"
+        },
+        {
+          "name": "Replay is identified",
+          "outcome": "passed"
+        },
+        {
+          "name": "Clearance identity is stable",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Conflicting duplicate request",
+      "response_code": 409,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Changed duplicate is rejected",
+          "outcome": "passed"
+        },
+        {
+          "name": "Conflict is explicit",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Read current student clearance",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Current clearance is returned",
+          "outcome": "passed"
+        },
+        {
+          "name": "Student sees only the current workflow",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Unauthenticated current-clearance request",
+      "response_code": 401,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Authentication is required",
+          "outcome": "passed"
+        },
+        {
+          "name": "Error is safe",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Missing required term",
+      "response_code": 422,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Missing term is rejected",
+          "outcome": "passed"
+        },
+        {
+          "name": "Term field is identified",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Term exceeds maximum length",
+      "response_code": 422,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Overlong term is rejected",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Student attempts office approval",
+      "response_code": 403,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Wrong role is forbidden",
+          "outcome": "passed"
+        },
+        {
+          "name": "Role boundary is explicit",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Library reviewer attempts Registrar task",
+      "response_code": 403,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Cross-office action is forbidden",
+          "outcome": "passed"
+        },
+        {
+          "name": "Office boundary is explicit",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Unknown office task",
+      "response_code": 404,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Missing resource is 404",
+          "outcome": "passed"
+        },
+        {
+          "name": "Not-found response is minimized",
+          "outcome": "passed"
+        },
+        {
+          "name": "Model details are not exposed",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Unknown API route",
+      "response_code": 404,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Unknown route is 404",
+          "outcome": "passed"
+        },
+        {
+          "name": "Unknown route uses the same contract",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Student attempts administrator failure queue",
+      "response_code": 403,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Administrator function is forbidden",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Too-short deficiency description",
+      "response_code": 422,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Short description is rejected",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Maximum-length deficiency description",
+      "response_code": 201,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Boundary value is accepted",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Peer student attempts another student's deficiency",
+      "response_code": 403,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Another student is forbidden",
+          "outcome": "passed"
+        },
+        {
+          "name": "Object boundary is explicit",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Owning student resolves deficiency",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Owning student can resolve",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Registrar approves after re-review",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Registrar approval succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Library approves its task",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Library approval succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Accounting approves its task",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Accounting approval succeeds",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Student Affairs approves its task",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Final office approval succeeds",
+          "outcome": "passed"
+        },
+        {
+          "name": "Clearance becomes complete",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Student verifies completed clearance",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Completed workflow is visible",
+          "outcome": "passed"
+        },
+        {
+          "name": "Status is completed",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Administrator reads permanent-failure queue",
+      "response_code": 200,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Administrator queue is available",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Failed login attempt 1",
+      "response_code": 401,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Credential failure remains generic",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Failed login attempt 2",
+      "response_code": 401,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Credential failure remains generic",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Failed login attempt 3",
+      "response_code": 401,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Credential failure remains generic",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Failed login attempt 4",
+      "response_code": 401,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Credential failure remains generic",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Failed login attempt 5",
+      "response_code": 401,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Credential failure remains generic",
+          "outcome": "passed"
+        }
+      ]
+    },
+    {
+      "item": "Failed login attempt 6",
+      "response_code": 429,
+      "assertions": [
+        {
+          "name": "Correlation header is present",
+          "outcome": "passed"
+        },
+        {
+          "name": "JSON responses disable MIME sniffing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses deny framing",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses use no-referrer",
+          "outcome": "passed"
+        },
+        {
+          "name": "API responses are not stored",
+          "outcome": "passed"
+        },
+        {
+          "name": "Sixth attempt is rate limited",
+          "outcome": "passed"
+        },
+        {
+          "name": "Rate-limit code is explicit",
+          "outcome": "passed"
+        },
+        {
+          "name": "Retry guidance is present",
+          "outcome": "passed"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Passwords and tokens were held only in process memory and are not present in this report.",
+    "Timeout and dependency-failure paths are verified by the Laravel automation and secure-exchange suites, not by a public failure-injection endpoint.",
+    "This controlled localhost run is not production or external-service evidence."
+  ]
+}

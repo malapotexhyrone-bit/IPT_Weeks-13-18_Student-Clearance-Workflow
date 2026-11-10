@@ -84,3 +84,47 @@ Record the preparation checkpoint review and approval decision before implementa
 - Authorized action: stage the listed preparation artifacts, commit them as `docs: prepare Week 15 testing and hardening`, and push `week-15-testing-hardening`
 - Excluded actions: merge, tag, GitHub Release creation, and later implementation checkpoints remain unauthorized
 - Result location: the resulting commit hash and remote branch state will be reported in the checkpoint handoff
+
+## Entry 004 Preparation checkpoint committed and pushed
+
+- Commit: `6b18a0b5da52a1d582f308aa09ed5c791afb036a`
+- Message: `docs: prepare Week 15 testing and hardening`
+- Remote: `origin/week-15-testing-hardening`
+- Verification: the local and remote branch references matched the exact commit after push
+- Boundary: merge, tag, release, and later checkpoint commits remained unauthorized
+
+## Entry 005 Focused hardening and API collection execution
+
+- Timestamp completed: 2026-11-10 20:22:52 +08:00
+- Pre-fix focused result: 6 failed tests, 20 assertions; preserved in `test-results/W15-HARDENING-BEFORE.xml`
+- Corrections: safe correlated not-found responses, idempotent replay, layered login throttling, standard login validation, and defensive API response headers
+- Post-fix focused result: 6 passed tests, 52 assertions; preserved in `test-results/W15-HARDENING-AFTER.xml`
+- Final collection result: 36 requests, 234 assertions, 0 failures; preserved in `test-results/W15-API-RUN-SUMMARY.json`
+- Complete backend regression: 53 passed, 254 assertions
+- Supporting checks: Pint passed; locked Composer audit found no known vulnerability advisories; Flutter analysis found no issues; six existing widget tests passed
+- Secret check: exported environment has zero populated sensitive values; final report contains no bearer token, access-token value, or one-time password; no `w15-*.txt` credential file remained
+
+### Preserved collection-run findings
+
+The first collection run exposed unescaped JSON-significant characters in generated runtime passwords. After correcting the collection pre-request scripts, a sandbox network-context run produced no responses and was preserved separately. A subsequent real HTTP run passed 231 of 234 assertions but revealed that Laravel's `array` cache cannot retain rate-limit counters across local HTTP requests. The final disposable run used the migrated database cache and passed all assertions. See `test-results/W15-TEST-RESULTS.md` for the evidence map and limitations.
+
+### Checkpoint boundary
+
+The API/backend hardening milestone is implemented and verified locally but is not staged, committed, or pushed. Flutter required-state expansion, browser captures, Activities 1 and 2, IA6, reflection, and final portfolio work remain later milestones.
+
+## Entry 006 Genuine source evidence
+
+- Capture: `screenshots/source-code/W15-CODE-001-api-security-headers-vscode.png`
+- Visible state: the real saved `AddApiSecurityHeaders.php` file in Visual Studio Code with filename and line numbers
+- Mapping: W15-H-05 defensive API headers; `ApiHardeningTest`; collection-level header assertions
+- Limitation: the source capture proves implementation, while `W15-HARDENING-AFTER.xml` and `W15-API-RUN-SUMMARY.json` provide execution evidence
+- Secret review: no credential, token, environment value, private key, or real student record is visible
+
+## Entry 007 Central evidence document updated and verified
+
+- Central document: `C:\Users\Admin\Documents\IPT\Evidence Document\Week-15-Screenshot-Journey-and-Evidence.docx`
+- Added evidence: Checkpoint 2 executed results, five hardening decisions, preserved failure findings, and the genuine `W15-CODE-001` source capture with requirement and test mapping
+- Verification: exported through installed Microsoft Word, rasterized to nine page images, and visually inspected page by page
+- Corrections made during verification: replaced obsolete preparation-only status language and constrained the final mapping table to the portrait-page margins
+- Final visual result: all nine pages readable with no clipping, overflow, unexpected blank page, or exposed secret observed
+- Repository boundary: the central DOCX remains outside Git; the original source screenshot remains in this repository

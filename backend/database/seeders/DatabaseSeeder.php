@@ -50,6 +50,16 @@ class DatabaseSeeder extends Seeder
             ],
         );
 
+        User::query()->updateOrCreate(
+            ['email' => 'student.peer@example.test'],
+            [
+                'name' => 'Jules Rivera',
+                'role' => User::ROLE_STUDENT,
+                'office_id' => null,
+                'password' => $generatedPassword,
+            ],
+        );
+
         $reviewers = [
             'REGISTRAR' => ['name' => 'Samira Flores', 'email' => 'registrar.reviewer@example.test'],
             'LIBRARY' => ['name' => 'Morgan Reyes', 'email' => 'library.reviewer@example.test'],

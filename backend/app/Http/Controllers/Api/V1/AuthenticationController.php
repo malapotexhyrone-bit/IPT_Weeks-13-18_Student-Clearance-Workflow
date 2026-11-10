@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -13,12 +14,9 @@ class AuthenticationController extends Controller
 {
     private const DUMMY_PASSWORD_HASH = '$2y$12$TxdPgffTNE9dePyseeJareI0m06xwApO4J6A8RBk60qDlupU3dQxi';
 
-    public function store(Request $request): JsonResponse
+    public function store(LoginRequest $request): JsonResponse
     {
-        $validated = $request->validate([
-            'email' => ['required', 'string', 'email:rfc', 'max:255'],
-            'password' => ['required', 'string', 'max:128'],
-        ]);
+        $validated = $request->validated();
 
         $email = Str::lower(trim($validated['email']));
         $user = User::query()->with('office')->where('email', $email)->first();

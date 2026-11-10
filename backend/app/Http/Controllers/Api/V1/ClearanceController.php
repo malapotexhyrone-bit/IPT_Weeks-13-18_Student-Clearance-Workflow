@@ -42,6 +42,27 @@ class ClearanceController extends Controller
                 $request->validated('idempotency_key'),
             );
         } catch (ClearanceAlreadyExistsException $exception) {
+            $idempotencyKey = $request->validated('idempotency_key');
+            $storedKeyHash = $exception->clearance->idempotency_key_hash;
+
+            if ($idempotencyKey !== null
+                && is_string($storedKeyHash)
+                && hash_equals($storedKeyHash, hash('sha256', $idempotencyKey))) {
+                $clearance = $exception->clearance->load([
+                    'academicTerm',
+                    'officeTasks.office',
+                    'officeTasks.deficiencies',
+                ]);
+
+                return response()->json([
+                    'data' => $this->clearanceData($clearance),
+                    'meta' => [
+                        'correlation_id' => $correlationId,
+                        'replayed' => true,
+                    ],
+                ]);
+            }
+
             return $this->error(
                 'CLEARANCE_ALREADY_EXISTS',
                 $exception->getMessage(),
@@ -68,7 +89,10 @@ class ClearanceController extends Controller
 
         return response()->json([
             'data' => $this->clearanceData($clearance),
-            'meta' => ['correlation_id' => $correlationId],
+            'meta' => [
+                'correlation_id' => $correlationId,
+                'replayed' => false,
+            ],
         ], 201);
     }
 

@@ -8,7 +8,7 @@ This repository is the continuing Project 8 Student Clearance Workflow for PFEBS
 | --- | --- | --- | --- |
 | 13 | `v13.0.0-week13-automation` | Advanced Automation and Scripting | Complete |
 | 14 | `v14.0.0-week14-secure-integration` | Secure Data Exchange and Encryption | Tagged; GitHub Release missing |
-| 15 | `v15.0.0-week15-testing-hardening` | Integration Testing and Security Hardening | Preparation checkpoint in progress |
+| 15 | `v15.0.0-week15-testing-hardening` | Integration Testing and Security Hardening | API hardening checkpoint ready for review |
 | 16 | `v16.0.0-week16-performance-deployment` | Performance Reliability and Deployment Evaluation | Not started |
 | 17 | `v17.0.0-week17-uat-documentation` | Final Integration UAT Documentation and Evaluation | Not started |
 | 18 | `v18.0.0-week18-final-defense` | Final Integration Review Examination and Technical Defense | Not started |
@@ -17,9 +17,9 @@ Week 13 and Week 14 are preserved by immutable tags. The public GitHub release e
 
 ## Current status
 
-Week 15, **Integration Testing and Security Hardening**, is in the preparation checkpoint. The synchronized baseline passes 47 Laravel tests with 201 assertions, Laravel Pint, the locked Composer dependency audit, Flutter analysis, and six Flutter widget tests. The preparation artifacts define a layered API, backend, Flutter, and browser strategy; an eighteen-case traceability matrix; controlled fictional data; trust boundaries; a Flutter flow; measurable acceptance criteria; and an explicit failure prediction.
+Week 15, **Integration Testing and Security Hardening**, has a pushed preparation checkpoint and a locally verified API hardening checkpoint ready for student review. Five ranked weaknesses were corrected. The focused suite now passes 6 tests with 52 assertions, the Postman-compatible collection passes 36 requests with 234 assertions, and the complete backend suite passes 53 tests with 254 assertions. Pint, the locked Composer audit, Flutter analysis, and six existing Flutter widget tests also pass.
 
-No Week 15 implementation result is claimed yet. The versioned API collection, new contract and failure tests, at least three justified hardening changes, targeted retests, complete regression, genuine screenshots, Activity 1, Activity 2, IA6, and the final evidence document remain subject to the required checkpoints. The student confirmed instructor approval and registration for Project 8; the official registry itself was not inspected.
+The API hardening result is local and not yet staged, committed, or pushed. Required Flutter state expansion, genuine hardening/browser screenshots, Activity 1, Activity 2, IA6, reflection, and the final evidence document remain subject to later checkpoints. The student confirmed instructor approval and registration for Project 8; the official registry itself was not inspected.
 
 ## Approved stack
 

@@ -13,10 +13,24 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 - Added a Week 15 laboratory log, controlled fictional dataset, evidence index, and pre-change baseline record.
 - Recorded that the Week 14 tag exists while its matching public GitHub Release is absent; no release was created without approval.
 
+### Added
+
+- Added a Postman 2.1 collection with 36 requests, a no-secrets local environment template, and 234 passing assertions against a disposable local database.
+- Added six focused API hardening tests, a ranked five-item hardening register, and preserved before/after JUnit evidence.
+- Added safe correlated API not-found and rate-limit responses, standard login validation, defensive response headers, and exact idempotent replay without duplicate workflow records.
+- Added a second fictional student to verify cross-student object authorization.
+- Preserved collection execution failures and corrected reruns without exposing generated credentials or tokens.
+
+### Verified
+
+- Focused hardening: 6 passed, 52 assertions after the preserved 6-failure pre-fix run.
+- Full backend regression: 53 passed, 254 assertions.
+- Pint, Composer locked audit, Flutter analysis, and six existing Flutter widget tests pass.
+
 ### Pending
 
-- Preparation checkpoint review, central evidence document, and explicit approval before the first Week 15 commit and push.
-- API collection, new contract and failure tests, at least three justified hardening fixes, targeted retests, complete regression, browser evidence, activities, IA6, reflection, and final portfolio.
+- Explicit approval before staging, committing, or pushing the API hardening checkpoint.
+- Flutter required-state expansion, browser evidence, activities, IA6, reflection, central evidence update, and final portfolio.
 
 ## Unreleased - Week 14 Secure Data Exchange and Encryption
 
