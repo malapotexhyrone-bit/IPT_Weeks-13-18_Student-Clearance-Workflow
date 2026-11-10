@@ -1,4 +1,37 @@
-# Week 14 Submission Checklist
+# Submission Checklist
+
+## Week 15 Integration Testing and Security Hardening
+
+| Requirement | Status | Evidence or next action |
+| --- | --- | --- |
+| Continuing repository and history preserved | complete | Fetched remote and tags; clean synchronized `main` at `2fe765a`; created `week-15-testing-hardening`. |
+| Previous Week 14 version and release verified | complete | Tag exists; public GitHub release API returned 404, so the matching Release is absent. |
+| Project 8 approval and registration | complete | Student confirmation is recorded; official registry itself was not inspected. |
+| Complete Week 15 requirements reviewed | complete | Preparation artifacts map the module objectives, topics, hands-on work, activities, IA6, and Project 8 cases. |
+| Feature branch and Week 15 evidence folders | complete | Branch and `evidence/week-15/` structure exist locally. |
+| Exact environment, build, date, and scope | complete | `evidence/week-15/LABORATORY-LOG.md`. |
+| Pre-change regression baseline | complete | 47 backend tests/201 assertions, Pint, Composer audit, Flutter analyze, and 6 widget tests pass. |
+| Topic 1 decision record and alternatives | complete | `docs/WEEK15-TEST-STRATEGY.md`. |
+| Requirements-to-test traceability matrix | complete | Eighteen cases record preconditions, expected results, planned evidence, and honest status. |
+| Workflow, trust-boundary, and Flutter flow diagrams | complete | `docs/WEEK15-SYSTEM-TEST-DESIGN.md`. |
+| Measurable acceptance criteria | complete | Normal, invalid, authorization, dependency, recovery, hardening, UI, and regression criteria are defined. |
+| Controlled fictional test data | complete | Nonsecret `example.test` identities and boundary values in `controlled-data.json`. |
+| Preparation central evidence DOCX | complete | Includes genuine VS Code evidence; all seven pages were rendered and visually inspected after correcting two layout defects. |
+| Topic 2 API collection and contract evidence | pending | Implement after preparation checkpoint approval. |
+| Normal, invalid, boundary, authentication, authorization, not-found, and duplicate cases | pending | Add to the collection and targeted automated suites. |
+| Timeout, unavailable-dependency, controlled-failure, and recovery cases | pending | Preserve prediction, actual output, safe signals, and recovery. |
+| Topic 3 failure-injection log and recovery findings | pending | Execute a controlled bounded failure after approval. |
+| Topic 4 ranked hardening backlog and at least three fixes | pending | Preserve before-and-after tests and residual risk. |
+| Flutter required-state tests and responsive browser checks | pending | Expand widget tests and capture genuine desktop and narrow evidence. |
+| Topic 5 defect record, targeted retests, and regression | pending | Preserve failures, causes, corrections, and complete results. |
+| Activity 1 and one-page interpretation | pending | Complete after executed traceability evidence exists. |
+| Activity 2 and one-page interpretation | pending | Review weak configuration and preserve before-and-after evidence. |
+| IA6 report | pending | Include strategy, collection, data, results, logs, defects, changes, regression, and remaining risks. |
+| Self-check and reflection | pending | Student must personalize and verify independent-contribution wording. |
+| Preparation checkpoint commit and push | pending | Student approval was recorded on 2026-11-10 at 19:58 +08:00; execute the authorized commit and push, then report the resulting hash and remote branch. |
+| Later commits, merge, Week 15 tag, and release | pending | Each requires the specified separate approval. |
+
+## Preserved Week 14 checklist
 
 Status values are `complete`, `pending`, or `blocked`.
 

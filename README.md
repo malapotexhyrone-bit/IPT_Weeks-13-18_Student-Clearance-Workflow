@@ -7,19 +7,19 @@ This repository is the continuing Project 8 Student Clearance Workflow for PFEBS
 | Week | Version | Module title | Status |
 | --- | --- | --- | --- |
 | 13 | `v13.0.0-week13-automation` | Advanced Automation and Scripting | Complete |
-| 14 | `v14.0.0-week14-secure-integration` | Secure Data Exchange and Encryption | In progress |
-| 15 | `v15.0.0-week15-testing-hardening` | Integration Testing and Security Hardening | Not started |
+| 14 | `v14.0.0-week14-secure-integration` | Secure Data Exchange and Encryption | Tagged; GitHub Release missing |
+| 15 | `v15.0.0-week15-testing-hardening` | Integration Testing and Security Hardening | Preparation checkpoint in progress |
 | 16 | `v16.0.0-week16-performance-deployment` | Performance Reliability and Deployment Evaluation | Not started |
 | 17 | `v17.0.0-week17-uat-documentation` | Final Integration UAT Documentation and Evaluation | Not started |
 | 18 | `v18.0.0-week18-final-defense` | Final Integration Review Examination and Technical Defense | Not started |
 
-Week 13 remains preserved at `v13.0.0-week13-automation`. Week 14 is being developed on `week14-secure-integration`; it will not receive its final tag or release until every required checkpoint is approved and the complete week is verified.
+Week 13 and Week 14 are preserved by immutable tags. The public GitHub release endpoint reports no release for the Week 14 tag, so this repository does not claim that release exists. Week 15 continues from the synchronized Week 14 baseline on `week-15-testing-hardening`.
 
 ## Current status
 
-Week 14, **Secure Data Exchange and Encryption**, is in progress. Checkpoint 1 added an administrator-only sender and a controlled receiver that exchange minimized clearance data over certificate-validated HTTPS. Checkpoint 2 replaces the Week 13 role selector with password authentication, generic invalid-credential handling, login throttling, two-hour Sanctum tokens, token revocation, and server-selected student, office, or administrator dashboards. The administrator Flutter view calls the protected secure-send endpoint without letting the browser choose its role.
+Week 15, **Integration Testing and Security Hardening**, is in the preparation checkpoint. The synchronized baseline passes 47 Laravel tests with 201 assertions, Laravel Pint, the locked Composer dependency audit, Flutter analysis, and six Flutter widget tests. The preparation artifacts define a layered API, backend, Flutter, and browser strategy; an eighteen-case traceability matrix; controlled fictional data; trust boundaries; a Flutter flow; measurable acceptance criteria; and an explicit failure prediction.
 
-The real browser journey covers desktop and narrow login, generic invalid credentials, student and Library role boundaries, and an accepted administrator secure exchange over the trusted local HTTPS API. Activity 1, Activity 2, SA8, IA5, residual risks, reproduction steps, and defense preparation are consolidated in `docs/WEEK14-SECURE-INTEGRATION-REPORT.md`. The combined central evidence DOCX is complete and stored outside Git at `C:\Users\Admin\Documents\IPT\Evidence Document\Week-14-Screenshot-Journey-and-Evidence.docx`; the student's verified reflection remains pending. The student confirmed instructor approval and registration for Project 8; the official registry itself was not inspected. No instructor grade, stakeholder acceptance, production readiness, or completed oral defense is claimed.
+No Week 15 implementation result is claimed yet. The versioned API collection, new contract and failure tests, at least three justified hardening changes, targeted retests, complete regression, genuine screenshots, Activity 1, Activity 2, IA6, and the final evidence document remain subject to the required checkpoints. The student confirmed instructor approval and registration for Project 8; the official registry itself was not inspected.
 
 ## Approved stack
 
@@ -37,6 +37,11 @@ backend/                       Laravel API and automation
 frontend/                      Flutter Web client
 docs/                          decisions, activities, and weekly report
 evidence/
+  week-15/
+    api-tests/                 controlled data and planned collection
+    logs/                      failure injection and recovery records
+    screenshots/               genuine setup, source, test and application captures
+    test-results/              executed baseline and regression evidence
   week-14/
     screenshots/source-code/  real VS Code captures
     screenshots/application/  real browser captures

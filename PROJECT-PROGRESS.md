@@ -1,6 +1,61 @@
 # Project Progress
 
-## Active work
+## Active Week 15 work
+
+- Week: 15 Integration Testing and Security Hardening
+- Project: Project 8 Student Clearance Workflow
+- Branch: `week-15-testing-hardening`
+- Baseline commit: `2fe765ac2d82037fda596443339c87db12087f7f`
+- Previous tag: `v14.0.0-week14-secure-integration`
+- Planned tag: `v15.0.0-week15-testing-hardening`
+- Project approval: student-confirmed instructor approval and registration on 2026-11-07; official registry not inspected
+
+### Verified starting point
+
+- Fetched `origin` and tags on 2026-11-10.
+- Verified `main` and `origin/main` are zero commits ahead or behind at `2fe765a`.
+- Verified the Week 14 annotated tag exists at the current baseline.
+- GitHub's public release endpoint returned `404 Not Found` for the Week 14 tag. The tag exists, but the matching GitHub Release is absent; no release action was taken.
+- Verified the working tree was clean before creating `week-15-testing-hardening`.
+
+### Executed baseline
+
+| Check | Result |
+| --- | --- |
+| Laravel tests | 47 passed, 201 assertions, 12.56 seconds |
+| Laravel Pint | passed |
+| Composer locked dependency audit | no known security advisories found |
+| Flutter analysis | no issues found |
+| Flutter widget tests | 6 passed |
+
+The verified environment is PHP 8.2.12, Composer 2.10.2, Flutter 3.47.8, Dart 3.13.7, Git 2.55.0.windows.3, Node.js 24.19.0, and npm 11.17.0.
+
+### Preparation checkpoint work
+
+- Created the Week 15 evidence directory structure.
+- Added the Week 15 test-strategy decision record and requirements-to-test traceability matrix.
+- Added the bounded workflow, trust-boundary diagram, Flutter flow, failure prediction, controlled data, evidence index, laboratory log, and pre-change baseline record.
+- Updated the active-week README, changelog, progress record, and checklist without claiming planned tests have passed.
+
+### Current approval status
+
+- Preparation checkpoint: explicitly approved by the student on 2026-11-10 at 19:58 +08:00
+- Commit and push: authorized for the approved preparation scope; resulting commit and remote state will be reported in the checkpoint handoff
+- Merge, tag, and release: not authorized
+- Central evidence DOCX: preparation version completed with a genuine VS Code capture and seven-page visual inspection after layout correction
+
+### Next milestone after approval
+
+Implement the versioned API collection and new contract, boundary, authorization, not-found, dependency-failure, recovery, security-header, and Flutter-state tests. Preserve actual failures, rank and fix at least three justified weaknesses, then run targeted and complete regression checks.
+
+### Week 15 constraints
+
+- New collection and hardening tests are not yet executed.
+- Controlled local services do not represent production university systems.
+- The Week 14 Git tag exists, but the matching GitHub Release is absent.
+- No instructor grade, stakeholder acceptance, production readiness, completed viva, or completed student reflection is claimed.
+
+## Preserved Week 14 record
 
 - Week: 14 — Secure Data Exchange and Encryption
 - Project: Project 8, Student Clearance Workflow

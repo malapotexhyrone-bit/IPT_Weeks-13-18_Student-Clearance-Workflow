@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Fictional controlled Week 15 integration-test data. No password, token, key, or production identifier is stored here.",
+  "academic_term": {
+    "active": "2026-2027-1",
+    "inactive": "2025-2026-2",
+    "unknown": "2099-UNKNOWN"
+  },
+  "actors": {
+    "student_owner": {
+      "name": "Ari Santos",
+      "email": "student.demo@example.test",
+      "role": "student"
+    },
+    "student_peer": {
+      "name": "Jamie Rivera",
+      "email": "student.peer@example.test",
+      "role": "student",
+      "provisioning": "Week 15 controlled-data setup only"
+    },
+    "library_reviewer": {
+      "name": "Morgan Reyes",
+      "email": "library.reviewer@example.test",
+      "role": "office",
+      "office": "LIBRARY"
+    },
+    "registrar_reviewer": {
+      "name": "Samira Flores",
+      "email": "registrar.reviewer@example.test",
+      "role": "office",
+      "office": "REGISTRAR"
+    },
+    "administrator": {
+      "name": "Taylor Cruz",
+      "email": "clearance.admin@example.test",
+      "role": "admin"
+    }
+  },
+  "valid_inputs": {
+    "deficiency_description": "Return the fictional library item before clearance approval.",
+    "resolution_note": "The fictional item was returned for controlled re-review.",
+    "idempotency_key": "week15-clearance-0001",
+    "correlation_id": "01K9Q2QYV4H3Q6A1D8R7T5M2NP"
+  },
+  "boundary_inputs": {
+    "term_code_max_30": "TERM-BOUNDARY-123456789012345",
+    "term_code_over_30": "TERM-BOUNDARY-1234567890123456",
+    "description_min_5": "12345",
+    "description_over_1000_generation": "Generate 1001 ASCII x characters in the runner; do not duplicate the payload in evidence.",
+    "resolution_min_5": "done!",
+    "idempotency_min_8": "w15-key8",
+    "idempotency_over_100_generation": "Generate 101 safe ASCII characters in the runner."
+  },
+  "invalid_inputs": {
+    "malformed_email": "not-an-email",
+    "empty_password": "",
+    "missing_term_code": null,
+    "unsafe_idempotency_key": "contains spaces",
+    "nonexistent_resource_id": 999999
+  }
+}
