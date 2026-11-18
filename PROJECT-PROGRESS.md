@@ -8,6 +8,7 @@
 - Baseline commit: `2fe765ac2d82037fda596443339c87db12087f7f`
 - Preparation commit: `6b18a0b5da52a1d582f308aa09ed5c791afb036a` (pushed)
 - API hardening commit: `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b` (pushed)
+- Flutter and browser-evidence commit: `ad55e71a1f0b4c5e0552270dd18fdee8e8ea1056` (pushed)
 - Previous tag: `v14.0.0-week14-secure-integration`
 - Planned tag: `v15.0.0-week15-testing-hardening`
 - Project approval: student-confirmed instructor approval and registration on 2026-11-07; official registry not inspected
@@ -60,22 +61,23 @@ The verified environment is PHP 8.2.12, Composer 2.10.2, Flutter 3.47.8, Dart 3.
 
 ### Current checkpoint state
 
-- API hardening implementation: approved, committed, and pushed; local and remote branch references matched `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b`
-- Flutter state expansion: eight focused scenarios pass; complete Flutter regression is 14 passed
-- Browser evidence: genuine desktop login and responsive unavailable-HTTPS-API states captured; a repeated sign-in kept one safe error message
-- Staged/committed/pushed for the Flutter/browser checkpoint: no; implementation and evidence are being assembled locally
-- Merge, tag, and release: not authorized
-- Central evidence DOCX: Checkpoint 3 Flutter results and two browser captures incorporated; exported through Microsoft Word as 12 pages and visually inspected page by page after correcting stale status, table width, and heading-indentation defects
+- Preparation, API hardening, and Flutter/browser checkpoints are pushed through `ad55e71a1f0b4c5e0552270dd18fdee8e8ea1056`.
+- Activity 1, Activity 2, IA6, the weekly summary, checklist, strategy, diagrams, evidence, and results are organized under `weeks/week-15/`.
+- The final audit identified `CVE-2026-128083` in Laravel 12.70.2. Laravel was updated to 12.73.0, the lockfile validated, the audit became clean, and the 53-test/254-assertion regression passed again.
+- The technical package is verified and ready for student review; the final consolidation commit and push are not yet approved.
+- Merge, tag, and release are not authorized.
+- The central evidence DOCX incorporates the Flutter results, two browser captures, final repository map, and approval boundary; its 13 pages were rendered and visually inspected after layout corrections.
 
-### Next milestone after this checkpoint
+### Next milestone
 
-Complete the requirements-to-results interpretation, bounded hardening activity, IA6 report, test-result screenshot, and central evidence update before presenting the Flutter/documentation checkpoint for approval.
+Run the final verification batch, present the exact changed paths and proposed commit message, and wait for student approval before the final Week 15 consolidation commit and push. Tag and GitHub Release approval remains separate.
 
 ### Week 15 constraints
 
-- The API collection and backend hardening checkpoint is committed and pushed; the Flutter/browser work remains local and uncommitted.
+- The existing checkpoints are pushed; the reorganized final Week 15 documentation package remains local and uncommitted pending final review.
 - Controlled local services do not represent production university systems.
 - The Week 14 Git tag exists, but the matching GitHub Release is absent.
+- A genuine focused Flutter terminal screenshot remains an optional manual evidence gap; the machine-readable 14-test result is preserved.
 - No instructor grade, stakeholder acceptance, production readiness, completed viva, or completed student reflection is claimed.
 
 ## Preserved Week 14 record

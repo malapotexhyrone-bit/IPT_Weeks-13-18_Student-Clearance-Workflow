@@ -6,9 +6,9 @@ How should the Student Clearance Workflow combine API collection tests, Laravel 
 
 ## Context and approved scope
 
-Week 15 continues the tagged Week 14 build at commit `2fe765ac2d82037fda596443339c87db12087f7f`. The bounded workflow remains clearance initiation, parallel office review, deficiency reporting and resolution, office approval, completion, automation review, and the administrator-only secure exchange. The backend is authoritative for identity, role, office assignment, object ownership, state transitions, and validation. The Flutter Web client is a testable public client and never stores server secrets.
+Week 15 continued from the tagged Week 14 build at commit `2fe765ac2d82037fda596443339c87db12087f7f`. The bounded workflow remains clearance initiation, parallel office review, deficiency reporting and resolution, office approval, completion, automation review, and the administrator-only secure exchange. The backend is authoritative for identity, role, office assignment, object ownership, state transitions, and validation. The Flutter Web client is a testable public client and never stores server secrets.
 
-The Week 15 increment will add traceable integration evidence, an executable API collection, controlled failure cases, at least three justified hardening changes, targeted retests, and a full regression result. It will not connect to production systems, use real university records, introduce mobile packaging, or claim production readiness.
+The Week 15 increment adds traceable integration evidence, an executable API collection, controlled failure cases, five justified hardening changes, targeted retests, and full regression results. It does not connect to production systems, use real university records, introduce mobile packaging, or claim production readiness.
 
 ## Actors and acceptance authority
 
@@ -87,21 +87,21 @@ Status values are `baseline`, `planned`, `executed`, `failed`, or `passed`.
 
 | Test ID | Requirement or risk | Type | Preconditions and controlled data | Expected result | Planned evidence | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| W15-TC-001 | Valid student clearance initiation | Positive and contract | Authenticated fictional student, active term, active offices | `201`; one clearance and one task per active office; correlation header and documented schema | API collection plus Laravel assertion | baseline |
-| W15-TC-002 | Missing or malformed term code | Negative validation | Authenticated fictional student | `422`; safe field error; no partial records | API collection plus Laravel assertion | baseline |
-| W15-TC-003 | Maximum and over-maximum input boundaries | Boundary | Controlled term, deficiency, and resolution strings | Maximum accepted where valid; over-maximum rejected with `422` and no state change | API collection and targeted tests | planned |
-| W15-TC-004 | Missing or revoked authentication | Authentication | No token or revoked fictional token | `401`; no protected data or state change | API collection and authentication tests | baseline |
-| W15-TC-005 | Student attempts another student's object | Object authorization | Two fictional students and one owned deficiency or clearance | `403` or intentionally non-disclosing outcome; no state change | API collection and Laravel ownership assertion | baseline |
-| W15-TC-006 | Wrong role calls protected function | Function authorization | Student or office token on administrator route | `403`; no privileged action | API collection and role tests | baseline |
-| W15-TC-007 | Office attempts another office's task | Object authorization | Two fictional offices and assigned task | `403`; task and clearance unchanged | API collection and workflow test | baseline |
-| W15-TC-008 | Unknown route-bound object | Not found | Valid token and nonexistent controlled identifier | JSON `404` with correlation identifier and no stack trace | API collection and hardening test | planned |
-| W15-TC-009 | Repeated clearance creation | Duplicate and idempotency | Same student and term or repeated idempotency key | `409` or same intended effect; no duplicate tasks or events | API collection and database assertions | baseline |
-| W15-TC-010 | Login rate control | Security boundary | Repeated wrong password for fictional account | Bounded attempts followed by `429`; generic credential message before limit | API collection and authentication test | baseline |
-| W15-TC-011 | API security headers | Security hardening | Any API response | Required defensive headers present without weakening CORS or caching expectations | Contract test before and after fix | planned |
-| W15-TC-012 | Controlled dependency timeout | Reliability | Local notification adapter configured to time out | Bounded attempts, observable safe failure, no duplicate effect | Failure-injection log and Laravel test | planned |
-| W15-TC-013 | Dependency unavailable | Reliability | Local gateway or active-office dependency unavailable | Safe `503` or bounded human-action route; consistent data | API collection and Laravel test | baseline |
-| W15-TC-014 | Recovery after transient failure | Recovery | First controlled delivery attempt fails, next succeeds | Same correlation context; success within limit; one final effect | Failure-injection log and Laravel test | baseline |
-| W15-TC-015 | Permanent failure | Recovery and human action | Controlled non-retryable or exhausted failure | Processing stops; one human-action item; no secret leakage | Laravel test and sanitized log | baseline |
+| W15-TC-001 | Valid student clearance initiation | Positive and contract | Authenticated fictional student, active term, active offices | `201`; one clearance and one task per active office; correlation header and documented schema | API collection plus Laravel assertion | passed |
+| W15-TC-002 | Missing or malformed term code | Negative validation | Authenticated fictional student | `422`; safe field error; no partial records | API collection plus Laravel assertion | passed |
+| W15-TC-003 | Maximum and over-maximum input boundaries | Boundary | Controlled term, deficiency, and resolution strings | Maximum accepted where valid; over-maximum rejected with `422` and no state change | API collection and targeted tests | passed |
+| W15-TC-004 | Missing or revoked authentication | Authentication | No token or revoked fictional token | `401`; no protected data or state change | API collection and authentication tests | passed |
+| W15-TC-005 | Student attempts another student's object | Object authorization | Two fictional students and one owned deficiency or clearance | `403` or intentionally non-disclosing outcome; no state change | API collection and Laravel ownership assertion | passed |
+| W15-TC-006 | Wrong role calls protected function | Function authorization | Student or office token on administrator route | `403`; no privileged action | API collection and role tests | passed |
+| W15-TC-007 | Office attempts another office's task | Object authorization | Two fictional offices and assigned task | `403`; task and clearance unchanged | API collection and workflow test | passed |
+| W15-TC-008 | Unknown route-bound object | Not found | Valid token and nonexistent controlled identifier | JSON `404` with correlation identifier and no stack trace | API collection and hardening test | passed |
+| W15-TC-009 | Repeated clearance creation | Duplicate and idempotency | Same student and term or repeated idempotency key | `409` or same intended effect; no duplicate tasks or events | API collection and database assertions | passed |
+| W15-TC-010 | Login rate control | Security boundary | Repeated wrong password for fictional account | Bounded attempts followed by `429`; generic credential message before limit | API collection and authentication test | passed |
+| W15-TC-011 | API security headers | Security hardening | Any API response | Required defensive headers present without weakening CORS or caching expectations | Contract test before and after fix | passed |
+| W15-TC-012 | Controlled dependency timeout | Reliability | Local notification adapter configured to time out | Bounded attempts, observable safe failure, no duplicate effect | Failure-injection log and Laravel test | passed |
+| W15-TC-013 | Dependency unavailable | Reliability | Local gateway or active-office dependency unavailable | Safe `503` or bounded human-action route; consistent data | API collection and Laravel test | passed |
+| W15-TC-014 | Recovery after transient failure | Recovery | First controlled delivery attempt fails, next succeeds | Same correlation context; success within limit; one final effect | Failure-injection log and Laravel test | passed |
+| W15-TC-015 | Permanent failure | Recovery and human action | Controlled non-retryable or exhausted failure | Processing stops; one human-action item; no secret leakage | Laravel test and sanitized log | passed |
 | W15-TC-016 | Flutter required states | UI behavior | Controlled API fakes or intercepts | Loading, success, empty, validation, authentication, authorization, network, server-error, and recovery feedback are understandable | `frontend/test/week15_state_test.dart`; `W15-FLUTTER-REGRESSION.json` | passed |
 | W15-TC-017 | Responsive and keyboard operation | Accessibility and usability | Desktop and responsive browser; semantics-enabled controls | Login and retry actions remain visible and operable with an understandable status message | `W15-APP-001`; `W15-APP-002` | executed; broader role journey inherited from Week 14 |
 | W15-TC-018 | Full regression after hardening | Regression | Current Checkpoint 3 working tree | 53 backend tests/254 assertions, 14 Flutter tests, formatting, analysis, audit, and 234 API assertions pass | Saved backend, API, and Flutter result files | passed |
@@ -117,14 +117,14 @@ Status values are `baseline`, `planned`, `executed`, `failed`, or `passed`.
 - Flutter Web presents the required normal and adverse states at desktop and narrow widths; tablet is checked where practical.
 - Conclusions distinguish executed results from planned, simulated, or unverified behavior.
 
-## Preparation checkpoint evidence
+## Executed evidence
 
-The preparation checkpoint is complete only when the feature branch, Week 15 evidence structure, laboratory log, controlled dataset, architecture and screen-flow diagram, this strategy, the evidence index, progress record, and checklist can be inspected before implementation begins.
+The collection passed 36 requests with 234 assertions. The focused hardening suite moved from 6 failed tests and 20 assertions to 6 passed tests and 52 assertions. The complete Laravel regression passed 53 tests with 254 assertions, and the complete Flutter regression passed 14 tests. The exact result files, browser captures, and preserved failed runs are indexed under `../evidence/EVIDENCE-INDEX.md`.
 
-## Residual limitations before execution
+## Residual limitations
 
-- The collection and new Week 15 tests have not yet been executed.
-- Timeout and server-error UI behavior still require a controlled, accurately labeled test arrangement.
-- Concurrency testing will be included only where the current local environment can produce repeatable results without overstating scale.
+- The browser captures prove visible desktop and narrow unavailable-service states; automated tests supply the broader deterministic Flutter state coverage.
+- Timeout, dependency failure, transient recovery, and permanent human-action behavior are verified internally because no public failure-injection endpoint was added.
+- Large-scale concurrency and production infrastructure are outside the controlled local test boundary.
 - The Week 14 tag exists, but its matching GitHub Release is absent and is outside this checkpoint's authority.
 - Final academic acceptance belongs to the instructor; the prototype is not production ready.

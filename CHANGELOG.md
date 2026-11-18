@@ -29,11 +29,21 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 - Full backend regression: 53 passed, 254 assertions.
 - Pint, Composer locked audit, and Flutter analysis pass; the complete Flutter regression passes 14 tests.
 - The API hardening checkpoint was approved, committed as `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b`, and pushed to `origin/week-15-testing-hardening`.
+- The Flutter and browser-evidence checkpoint was approved, committed as `ad55e71a1f0b4c5e0552270dd18fdee8e8ea1056`, and pushed to `origin/week-15-testing-hardening`.
+- The final audit identified `CVE-2026-128083` in Laravel 12.70.2. Laravel was updated within the existing 12.x constraint to 12.73.0; the lockfile validated, the advisory scan became clean, Pint passed, and the 53-test/254-assertion regression passed again.
+
+### Documented
+
+- Organized the Week 15 package under `weeks/week-15/` without duplicating the application source.
+- Completed Activity 1 with the requirements-to-results interpretation and Activity 2 with the bounded hardening review.
+- Completed the IA6 report with strategy, collection, controlled data, results, logs, defects, five fixes, regression evidence, and remaining risks.
+- Added the Week 15 summary and full submission checklist while leaving the student's personal reflection and optional terminal screenshot honestly pending.
 
 ### Pending
 
-- Approval before staging, committing, or pushing the Flutter/browser evidence checkpoint.
-- Activities, IA6, reflection, central evidence completion, test-result screenshot, and final portfolio.
+- Student review and approval before the final Week 15 consolidation commit and push.
+- Student-personalized reflection and, if available, the genuine focused Flutter terminal screenshot.
+- Separate approval before creating `v15.0.0-week15-testing-hardening` and its GitHub Release.
 
 ## Unreleased - Week 14 Secure Data Exchange and Encryption
 

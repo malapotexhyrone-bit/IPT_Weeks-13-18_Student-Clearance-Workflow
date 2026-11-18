@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document defines the actors, workflow, trust boundaries, dependencies, failure paths, human decisions, and Flutter Web states that Week 15 will test. It describes the preparation baseline and does not claim that the planned Week 15 cases have already passed.
+This document defines the actors, workflow, trust boundaries, dependencies, failure paths, human decisions, and Flutter Web states verified during Week 15. Executed outcomes are linked through the Week 15 evidence index; the diagrams themselves describe design and do not replace test results.
 
 ## Bounded workflow under test
 
@@ -100,9 +100,9 @@ flowchart TD
 | Office workflow | Office dashboard queue and review actions | Assigned-office boundary and invalid-state feedback. |
 | Administrator workflow | Admin dashboard automation and secure-send actions | Function authorization, bounded retry, protected exchange feedback. |
 
-## Controlled failure prediction
+## Controlled failure prediction and result
 
-Before execution, the selected controlled failure is a notification dependency timeout during a queued reminder delivery. The expected result is a bounded retry cycle with the same logical delivery and correlation context, no duplicate notification effect, a sanitized actionable failure record, and human action after the final allowed attempt. The exact injected behavior and actual outcome will be recorded separately; this prediction is not a passed result.
+Before execution, the selected controlled failure was a notification dependency timeout during a queued reminder delivery. The predicted result was a bounded retry cycle with the same logical delivery and correlation context, no duplicate notification effect, a sanitized actionable failure record, and human action after the final allowed attempt. The automation regression verified bounded timeout, transient recovery, duplicate-effect protection, and permanent-failure routing. The application intentionally exposes no public failure-injection endpoint.
 
 ## Maintenance and residual limitations
 

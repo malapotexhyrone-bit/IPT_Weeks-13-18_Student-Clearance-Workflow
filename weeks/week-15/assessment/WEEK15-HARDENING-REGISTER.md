@@ -18,11 +18,11 @@ Priority combines likely misuse, confidentiality/integrity impact, exposure thro
 
 ## Preserved before-and-after evidence
 
-- Before: `evidence/week-15/test-results/W15-HARDENING-BEFORE.xml` — six focused tests failed for the six observed contract gaps.
-- After: `evidence/week-15/test-results/W15-HARDENING-AFTER.xml` — six focused tests passed with 52 assertions.
-- Final collection: `evidence/week-15/test-results/W15-API-RUN-SUMMARY.json` — 36 requests and 234 assertions passed.
-- Full regression: `evidence/week-15/test-results/W15-BACKEND-REGRESSION.xml` — 53 tests and 254 assertions passed.
-- Supporting verification: Pint passed; the locked Composer audit found no known advisories; Flutter analysis found no issues; six existing widget tests passed.
+- Before: `../evidence/test-results/W15-HARDENING-BEFORE.xml` - six focused tests failed with 20 assertions.
+- After: `../evidence/test-results/W15-HARDENING-AFTER.xml` - six focused tests passed with 52 assertions.
+- Final collection: `../evidence/test-results/W15-API-RUN-SUMMARY.json` - 36 requests and 234 assertions passed.
+- Full regression: `../evidence/test-results/W15-BACKEND-REGRESSION.xml` - 53 tests and 254 assertions passed.
+- Supporting verification: Pint passed; the locked Composer audit found no known advisories; Flutter analysis found no issues; the complete Flutter regression passed 14 tests.
 
 ## Remaining risks
 

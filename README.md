@@ -8,18 +8,18 @@ This repository is the continuing Project 8 Student Clearance Workflow for PFEBS
 | --- | --- | --- | --- |
 | 13 | `v13.0.0-week13-automation` | Advanced Automation and Scripting | Complete |
 | 14 | `v14.0.0-week14-secure-integration` | Secure Data Exchange and Encryption | Tagged; GitHub Release missing |
-| 15 | `v15.0.0-week15-testing-hardening` | Integration Testing and Security Hardening | API hardening checkpoint pushed; Flutter evidence in progress |
+| 15 | `v15.0.0-week15-testing-hardening` | Integration Testing and Security Hardening | Technical package ready for final student review; not tagged or released |
 | 16 | `v16.0.0-week16-performance-deployment` | Performance Reliability and Deployment Evaluation | Not started |
-| 17 | `v17.0.0-week17-uat-documentation` | Final Integration UAT Documentation and Evaluation | Not started |
-| 18 | `v18.0.0-week18-final-defense` | Final Integration Review Examination and Technical Defense | Not started |
+| 17 | `v17.0.0-week17-uat-documentation-evaluation` | Final Integration UAT Documentation and Evaluation | Not started |
+| 18 | `v18.0.0-week18-final-review-defense` | Final Integration Review Examination and Technical Defense | Not started |
 
 Week 13 and Week 14 are preserved by immutable tags. The public GitHub release endpoint reports no release for the Week 14 tag, so this repository does not claim that release exists. Week 15 continues from the synchronized Week 14 baseline on `week-15-testing-hardening`.
 
 ## Current status
 
-Week 15, **Integration Testing and Security Hardening**, has pushed preparation and API-hardening checkpoints. Five ranked weaknesses were corrected. The focused suite passes 6 tests with 52 assertions, the Postman-compatible collection passes 36 requests with 234 assertions, and the complete backend suite passes 53 tests with 254 assertions. Pint, the locked Composer audit, and Flutter analysis pass. The Flutter regression now passes 14 tests, including eight focused Week 15 loading, empty, authorization, not-found, network, timeout, server-error, and recovery scenarios.
+Week 15, **Integration Testing and Security Hardening**, is technically implemented and verified in the controlled local environment. Five ranked weaknesses were corrected. The focused suite passes 6 tests with 52 assertions, the Postman-compatible collection passes 36 requests with 234 assertions, and the complete backend suite passes 53 tests with 254 assertions. Pint, the locked Composer audit, and Flutter analysis pass. The Flutter regression passes 14 tests, including eight focused Week 15 loading, empty, authorization, not-found, network, timeout, server-error, and recovery scenarios.
 
-The API hardening checkpoint is committed and pushed at `138adc9eab16f2cd0a7dc1c42eac69e7b30cb43b`. Genuine Flutter desktop and responsive unavailable-API screenshots are preserved for the next checkpoint. Activity 1, Activity 2, IA6, reflection, remaining evidence, and the final weekly release remain incomplete. The student confirmed instructor approval and registration for Project 8; the official registry itself was not inspected.
+The preparation, API hardening, and Flutter/browser checkpoints are pushed through `ad55e71a1f0b4c5e0552270dd18fdee8e8ea1056`. Activity 1, Activity 2, IA6, the weekly summary, and the mapped evidence package are prepared under `weeks/week-15/`. The final audit remediated `CVE-2026-128083` by updating Laravel from 12.70.2 to 12.73.0; the post-update audit is clean and the backend regression still passes. The final consolidation commit and push await student approval; the immutable tag and GitHub Release require separate later approval. The student reflection and one optional manual terminal screenshot remain student actions. The student confirmed instructor approval and registration for Project 8; the official registry itself was not inspected.
 
 ## Approved stack
 
@@ -35,14 +35,20 @@ Laravel 12 was selected because it supports PHP 8.2. Laravel 13 requires PHP 8.3
 ```text
 backend/                       Laravel API and automation
 frontend/                      Flutter Web client
-docs/                          decisions, activities, and weekly report
-evidence/
+docs/                          preserved earlier-week decisions and reports
+weeks/
   week-15/
-    api-tests/                 controlled data and planned collection
-    logs/                      failure injection and recovery records
-    screenshots/               genuine setup, source, test and application captures
-    test-results/              executed baseline and regression evidence
-  week-14/
+    activities/                Activity 1 and Activity 2 interpretations
+    assessment/                IA6, strategy, and hardening register
+    diagrams/                  system, trust-boundary, and Flutter flow design
+    evidence/
+      api-tests/               controlled data and executed collection
+      logs/                    laboratory and recovery record
+      screenshots/             genuine setup, source, test, and application captures
+      test-results/            baseline, failures, targeted, and regression evidence
+    WEEK-15-SUMMARY.md
+    SUBMISSION-CHECKLIST.md
+evidence/week-14/
     screenshots/source-code/  real VS Code captures
     screenshots/application/  real browser captures
     screenshots/setup/        setup proof
@@ -76,7 +82,7 @@ flutter analyze
 flutter test
 ```
 
-The current backend regression result is 47 passing tests with 201 assertions. This includes five authentication tests with 31 assertions and 12 secure-exchange tests. The authentication suite covers server-owned role selection, password hashing, generic wrong/unknown-account errors, validation, throttling, logout, and revoked-token rejection. Laravel Pint and Flutter analysis pass; all six Flutter widget tests pass. Composer reports no known advisories after the affected Symfony packages were updated to 7.4.23. Six real end-to-end browser states and five additional controlled Flutter UI states were visually inspected without exposing passwords. The controlled states use intercepted fictional responses to verify validation, loading, empty, authorization, and network-error presentation; they are not represented as live backend results.
+The current Week 15 backend regression result is 53 passing tests with 254 assertions. The focused hardening suite passes 6 tests with 52 assertions after a preserved six-failure pre-fix run. The executed API collection passes 36 requests with 234 assertions. Laravel Pint, Flutter analysis, and the locked Composer audit pass; the complete Flutter regression passes 14 tests. Genuine Week 15 browser evidence covers the desktop login and a narrow unavailable-service state. Machine-readable results and limitations are indexed under `weeks/week-15/evidence/`.
 
 ## Data and safety
 

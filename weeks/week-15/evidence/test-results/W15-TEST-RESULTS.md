@@ -5,7 +5,7 @@
 - Student: Malapote, Xhyrone Wayne N.
 - Course and section: BSIT 3-A
 - Project: Project 8 Student Clearance Workflow
-- Executed: 2026-11-10 to 2026-11-11, Asia/Manila
+- Executed: 2026-11-10 to 2026-11-11, with final dependency remediation and regression on 2026-11-18, Asia/Manila
 - Branch: `week-15-testing-hardening`
 - Controlled data: fictional `example.test` identities and disposable SQLite databases only
 
@@ -19,11 +19,15 @@ This record covers the API collection, focused hardening tests, and complete reg
 | Post-fix hardening suite | 6 passed, 52 assertions | `W15-HARDENING-AFTER.xml` |
 | Postman 2.1 / Newman API run | 36 requests, 234 assertions, 0 failed | `W15-API-RUN-SUMMARY.json` |
 | Complete Laravel regression | 53 passed, 254 assertions | `W15-BACKEND-REGRESSION.xml` |
-| Laravel Pint | passed | `LABORATORY-LOG.md` |
-| Composer locked audit | no known vulnerability advisories | `LABORATORY-LOG.md` |
-| Flutter analysis | no issues | `LABORATORY-LOG.md` |
+| Laravel Pint | passed | `../logs/LABORATORY-LOG.md` |
+| Composer locked audit | no known vulnerability advisories | `../logs/LABORATORY-LOG.md` |
+| Flutter analysis | no issues | `../logs/LABORATORY-LOG.md` |
 | Focused Week 15 Flutter state suite | 8 passed | `W15-FLUTTER-REGRESSION.json` |
 | Complete Flutter widget regression | 14 passed | `W15-FLUTTER-REGRESSION.json` |
+
+## Final dependency remediation
+
+The final 18 November audit identified low-severity advisory `CVE-2026-128083` in locked `laravel/framework` 12.70.2. The framework was updated within the existing Laravel 12 constraint to 12.73.0, compatible transitive packages were refreshed, and the lockfile validated successfully. The post-update audit reported no known advisories, Pint passed, and the complete backend regression again passed 53 tests with 254 assertions. `W15-BACKEND-REGRESSION.xml` contains the refreshed post-update JUnit result.
 
 ## Preserved failed runs and corrections
 
@@ -31,7 +35,7 @@ This record covers the API collection, focused hardening tests, and complete reg
 2. `W15-API-RUN-INFRASTRUCTURE-FAILURE.json` preserves a no-response run caused by the approved runner and local server occupying different sandbox network contexts. Both were restarted in the same controlled context.
 3. `W15-API-RUN-NONPERSISTENT-CACHE-FAILURE.json` preserves a 231/234 assertion run. The server used Laravel's per-request `array` cache, so the sixth failed login could not observe the previous five counters. The final isolated run used the migrated database cache and the safe `429 RATE_LIMITED` contract passed.
 
-These are test-tool and controlled-environment findings; they are not relabeled as application defects. The application weaknesses and corrections are ranked separately in `../../../docs/WEEK15-HARDENING-REGISTER.md`.
+These are test-tool and controlled-environment findings; they are not relabeled as application defects. The application weaknesses and corrections are ranked separately in `../../assessment/WEEK15-HARDENING-REGISTER.md`.
 
 ## Security and limitations
 

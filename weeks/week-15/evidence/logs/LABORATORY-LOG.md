@@ -163,4 +163,20 @@ The API/backend hardening milestone is implemented and verified locally but is n
 - A genuine VS Code terminal capture was attempted after opening the real `week15_state_test.dart` file.
 - VS Code's terminal accessibility layer did not accept the automated command input reliably. The failed terminal view was not saved and is not presented as a passing result.
 - The repeatable evidence remains `test-results/W15-FLUTTER-REGRESSION.json`, whose final `done` event reports success and whose 16 test-start events comprise two synthetic file-loading events plus 14 actual tests.
-- Manual capture steps: open this repository in Visual Studio Code; open a terminal at `frontend`; run `flutter test test\week15_state_test.dart`; wait for `All tests passed!`; confirm no credentials or unrelated windows are visible; save the capture as `evidence/week-15/screenshots/tests/W15-TEST-001-flutter-focused-pass.png`; then add its requirement/result mapping to this log and `EVIDENCE-INDEX.md`.
+- Manual capture steps: open this repository in Visual Studio Code; open a terminal at `frontend`; run `flutter test test\week15_state_test.dart`; wait for `All tests passed!`; confirm no credentials or unrelated windows are visible; save the capture as `weeks/week-15/evidence/screenshots/tests/W15-TEST-001-flutter-focused-pass.png`; then add its requirement/result mapping to this log and `../EVIDENCE-INDEX.md`.
+
+## Entry 012 Final package verification and dependency remediation
+
+- Executed: 2026-11-18, Asia/Manila
+- Repository package: reorganized under `weeks/week-15/` with Activity 1, Activity 2, IA6, weekly summary, submission checklist, diagrams, logs, collection, screenshots, and result files
+- Initial final audit finding: Composer reported low-severity advisory `PKSA-yxbx-3c9s-cjt9` / `CVE-2026-128083` for `laravel/framework` 12.70.2; the advisory was published on 2026-11-13 after the earlier Week 15 audit
+- Remediation: updated within the existing Laravel 12 constraint from 12.70.2 to 12.73.0 and refreshed 16 compatible transitive packages in `composer.lock`
+- Post-update audit: no security vulnerability advisories found
+- Lockfile verification: `composer validate --no-interaction` passed
+- Post-update backend regression: 53 passed, 254 assertions; machine-readable JUnit refreshed at `../test-results/W15-BACKEND-REGRESSION.xml`
+- Laravel Pint: passed
+- Flutter analysis: no issues found
+- Flutter regression: 14 passed
+- Central evidence DOCX: updated to the final repository paths and status, exported as 13 pages, and visually inspected page by page with no clipping, overlap, broken table, or exposed secret observed
+- Remaining honest gap: the optional genuine focused Flutter terminal screenshot and the student's own reflection wording remain pending
+- Approval boundary: no final consolidation commit, push, merge, tag, release, submission, or Week 16 work was performed
