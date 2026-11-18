@@ -29,8 +29,8 @@ Status values are `complete`, `pending student`, `pending approval`, or `not app
 | Final dependency advisory review | complete | Laravel 12.70.2 was updated to 12.73.0 for `CVE-2026-128083`; lockfile valid, final audit clean, 53/254 regression passes. |
 | Genuine focused Flutter terminal screenshot | pending student | Machine-readable pass exists; manual capture steps are in laboratory log Entry 011. This gap does not convert an unexecuted screenshot into a pass. |
 | Student reflection and individual contribution wording | pending student | Student must answer the four IA6 prompts truthfully and reproduce selected checks. |
-| Final Week 15 package review | pending approval | Review this checklist, summary, diffs, results, and central DOCX. |
-| Final Week 15 commit and push | pending approval | No final consolidation commit or push until the student approves the complete package. |
+| Final Week 15 package review | complete | Student approved the complete package after reviewing the summary and verification results. |
+| Final Week 15 commit and push | complete | Pushed as `ec402134e297671b8aace89c938193fbd12b0ae2` to `origin/week-15-testing-hardening`. |
 | Week 15 tag and GitHub Release | pending separate approval | Proposed tag: `v15.0.0-week15-testing-hardening`; release title: `Week 15 — Integration Testing and Security Hardening`. |
 | Week 16 work | not applicable with justification | Not authorized and not started. |
 

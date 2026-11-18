@@ -41,7 +41,7 @@ This changelog follows the continuing Weeks 13-18 Student Clearance Workflow. Ea
 
 ### Pending
 
-- Student review and approval before the final Week 15 consolidation commit and push.
+- Final Week 15 consolidation was approved and pushed as `ec402134e297671b8aace89c938193fbd12b0ae2`.
 - Student-personalized reflection and, if available, the genuine focused Flutter terminal screenshot.
 - Separate approval before creating `v15.0.0-week15-testing-hardening` and its GitHub Release.
 

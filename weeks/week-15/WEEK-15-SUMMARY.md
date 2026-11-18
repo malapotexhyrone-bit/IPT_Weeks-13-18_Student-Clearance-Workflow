@@ -4,7 +4,7 @@
 
 Week 15 Integration Testing and Security Hardening is technically implemented and verified in the controlled local environment. The workflow is traced from clearance initiation through office review, deficiency resolution, approval, and completion. Authorization tests cover another student, another office, and wrong-role actions. A Postman-compatible collection, Laravel feature tests, Flutter tests, browser evidence, failure records, hardening changes, and IA6 report are organized in this folder.
 
-The package is ready for the student's final review. It is not yet committed as the final Week 15 consolidation, merged, tagged, released, submitted, or accepted by the instructor.
+The package was approved, committed as `ec402134e297671b8aace89c938193fbd12b0ae2`, and pushed to `origin/week-15-testing-hardening`. It is not merged, tagged, released, submitted, or accepted by the instructor.
 
 ## Implemented hardening
 
@@ -51,7 +51,7 @@ The package is ready for the student's final review. It is not yet committed as 
 - The student must personalize and verify the reflection in their own words and rehearse the technical defense.
 - The local controlled services do not establish production readiness, stakeholder acceptance, large-scale concurrency, or deployment reliability.
 - The Week 14 tag exists, but its matching GitHub Release is absent; no release action was taken.
-- The final Week 15 commit and push require student approval. The Week 15 tag and GitHub Release require separate later approval.
+- The final Week 15 commit and push are complete. The Week 15 tag and GitHub Release require separate later approval.
 
 ## Defense explanation
 
@@ -63,4 +63,4 @@ Week 15 uses the right test layer for each claim. The collection proves the publ
 2. Review the IA6 report and replace the reflection prompts with truthful personal answers.
 3. If possible, manually capture `evidence/screenshots/tests/W15-TEST-001-flutter-focused-pass.png` using the instructions in the laboratory log, then update the evidence index.
 4. Review `git status` and `git diff --staged` after the proposed files are staged for the final Week 15 commit.
-5. Approve the final Week 15 commit and push only after confirming the package matches the actual work.
+5. Review the pushed commit and separately authorize the Week 15 tag and GitHub Release only when ready.

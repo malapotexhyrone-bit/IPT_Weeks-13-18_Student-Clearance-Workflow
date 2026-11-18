@@ -64,13 +64,13 @@ The verified environment is PHP 8.2.12, Composer 2.10.2, Flutter 3.47.8, Dart 3.
 - Preparation, API hardening, and Flutter/browser checkpoints are pushed through `ad55e71a1f0b4c5e0552270dd18fdee8e8ea1056`.
 - Activity 1, Activity 2, IA6, the weekly summary, checklist, strategy, diagrams, evidence, and results are organized under `weeks/week-15/`.
 - The final audit identified `CVE-2026-128083` in Laravel 12.70.2. Laravel was updated to 12.73.0, the lockfile validated, the audit became clean, and the 53-test/254-assertion regression passed again.
-- The technical package is verified and ready for student review; the final consolidation commit and push are not yet approved.
+- The technical package was approved, committed as `ec402134e297671b8aace89c938193fbd12b0ae2`, and pushed to `origin/week-15-testing-hardening`.
 - Merge, tag, and release are not authorized.
 - The central evidence DOCX incorporates the Flutter results, two browser captures, final repository map, and approval boundary; its 13 pages were rendered and visually inspected after layout corrections.
 
 ### Next milestone
 
-Run the final verification batch, present the exact changed paths and proposed commit message, and wait for student approval before the final Week 15 consolidation commit and push. Tag and GitHub Release approval remains separate.
+Propose the exact Week 15 tag, target commit, release title, and release notes only when the student separately authorizes tag and GitHub Release creation. Do not begin Week 16 until requested.
 
 ### Week 15 constraints
 
